@@ -13,9 +13,8 @@ namespace quit.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Calculator()
         {
-            ViewBag.Message = "Your application description page.";
 
             return View();
         }
