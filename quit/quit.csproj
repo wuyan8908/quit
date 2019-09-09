@@ -310,8 +310,17 @@
     <Content Include="img\electronic_bg.jpg" />
     <Content Include="img\home-bg.jpg" />
     <Content Include="img\home-bg2.jpg" />
+    <Content Include="img\Medications-image.jpg" />
+    <Content Include="img\NicotineReplacements-image.jpg" />
+    <Content Include="img\OtherOptions-image.jpg" />
     <Content Include="img\post-bg.jpg" />
     <Content Include="img\post-sample-image.jpg" />
+    <Content Include="img\QuittingSupport-Medications-image.jpg" />
+    <Content Include="img\QuittingSupport-NicotineReplacements-image.jpg" />
+    <Content Include="img\QuittingSupport-OtherOptions-image.jpg" />
+    <Content Include="img\QuittingSupport-QuittingSupportOptions-image.jpg" />
+    <Content Include="img\QuittingSupport-SupportFromProfessionals-image.jpg" />
+    <Content Include="img\SupportFromProfessionals-image.png" />
     <Content Include="js\clean-blog.js" />
     <Content Include="js\clean-blog.min.js" />
     <Content Include="js\contact_me.js" />
