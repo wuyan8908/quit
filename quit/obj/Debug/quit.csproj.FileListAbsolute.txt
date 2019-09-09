@@ -108,3 +108,4 @@ C:\Users\Aleaxe\Desktop\quit\quit\obj\Debug\quit.csproj.CoreCompileInputs.cache
 C:\Users\Aleaxe\Desktop\quit\quit\obj\Debug\quit.csproj.CopyComplete
 C:\Users\Aleaxe\Desktop\quit\quit\obj\Debug\quit.dll
 C:\Users\Aleaxe\Desktop\quit\quit\obj\Debug\quit.pdb
+C:\Users\Aleaxe\Desktop\quit\quit\obj\Debug\quit.csprojAssemblyReference.cache
