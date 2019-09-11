@@ -176,7 +176,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     background: no-repeat center center;
     background-color: #868e96;
     background-attachment: fixed;
@@ -224,7 +224,7 @@ header.masthead .site-heading h1 {
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
