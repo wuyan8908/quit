@@ -19,12 +19,33 @@ namespace quit
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/calculator").Include(
+                        "~/Scripts/Calculator/button.min.js",
+                        "~/Scripts/Calculator/core.min.js",
+                        "~/Scripts/Calculator/datepicker.min.js",
+                        "~/Scripts/Calculator/jquery-migrate.min.js",
+                        "~/Scripts/Calculator/jquery.js",
+                        "~/Scripts/Calculator/jQuery.stringify.js",
+                        "~/Scripts/Calculator/jquery.validate.js",
+                        "~/Scripts/Calculator/mouse.min.js",
+                        "~/Scripts/Calculator/position.min.js",
+                        "~/Scripts/Calculator/slider.min.js",
+                        "~/Scripts/Calculator/tooltip.min.js",
+                        "~/Scripts/Calculator/widget.min.js"
+                        ));
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/css/calculator").Include(
+                      "~/css/calcultor/jquery-ui-1.8.20.custom.css",
+                      "~/css/calcultor/style.css",
+                      "~/css/calcultor/stylepublic.css"
+                      ));
         }
     }
 }

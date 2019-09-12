@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+<html  lang="en-AU">
 
 <head>
 
@@ -19,154 +19,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="~/css/clean-blog.css" rel="stylesheet">
-    <style type="text/css">
-        .buttonCa {
-            border-radius: 4px;
-            background-color: #4184c6;
-            font-weight: 700;
-            border: none;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 15px;
-            padding: 15px;
-            border-radius: 15px;
-            width: 180px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-            box-shadow: 0 2px #999;
-            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-            .buttonCa span {
-                cursor: pointer;
-                display: inline-block;
-                position: relative;
-                transition: 0.5s;
-            }
-
-                .buttonCa span:after {
-                    content: '\00bb';
-                    position: absolute;
-                    opacity: 0;
-                    top: 0;
-                    right: -20px;
-                    transition: 0.5s;
-                }
-
-            .buttonCa:hover span {
-                padding-right: 20px;
-            }
-
-            .buttonCa:active {
-                background-color: #4184c6;
-                box-shadow: 0px 2px #666;
-                transform: translateY(4px);
-            }
-
-            .buttonCa:hover span:after {
-                opacity: 1;
-                right: 0;
-            }
-
-        .calculator {
-            max-width: 800px;
-            margin: 10px auto;
-            padding: 5px 5px;
-            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-        }
-
-        #error-page {
-            margin-top: 50px;
-        }
-
-            #error-page p {
-                font-size: 14px;
-                line-height: 1.5;
-                margin: 25px 0 20px;
-            }
-
-            #error-page code {
-                font-family: Consolas, Monaco, monospace;
-            }
-
-        ul li {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        a {
-            color: #0073aa;
-        }
-
-            a:hover,
-            a:active {
-                color: #00a0d2;
-            }
-
-            a:focus {
-                color: #124964;
-                -webkit-box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
-                box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
-                outline: none;
-            }
-
-        .button {
-            background: #f7f7f7;
-            border: 1px solid #ccc;
-            color: #555;
-            display: inline-block;
-            text-decoration: none;
-            font-size: 13px;
-            line-height: 26px;
-            height: 28px;
-            margin: 0;
-            padding: 0 10px 1px;
-            cursor: pointer;
-            -webkit-border-radius: 3px;
-            -webkit-appearance: none;
-            border-radius: 3px;
-            white-space: nowrap;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-box-shadow: 0 1px 0 #ccc;
-            box-shadow: 0 1px 0 #ccc;
-            vertical-align: top;
-        }
-
-            .button.button-large {
-                height: 30px;
-                line-height: 28px;
-                padding: 0 12px 2px;
-            }
-
-            .button:hover,
-            .button:focus {
-                background: #fafafa;
-                border-color: #999;
-                color: #23282d;
-            }
-
-            .button:focus {
-                border-color: #5b9dd9;
-                -webkit-box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
-                box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
-                outline: none;
-            }
-
-            .button:active {
-                background: #eee;
-                border-color: #999;
-                -webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
-                box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
-                -webkit-transform: translateY(1px);
-                -ms-transform: translateY(1px);
-                transform: translateY(1px);
-            }
-    </style>
+    <link href="~/css/quitpath.css" rel="stylesheet">
+    <link href="~/css/calcultor/calculator.css" rel="stylesheet" />
+  
 </head>
 
 <body>
@@ -181,15 +36,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="~/Home/Index">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
+                        <div class="nav-link dropdown-content">
+                            <a href="~/NicotineReplacements/NicotineReplacements">Nicotine Replacements</a>
+                            <a href="~/Medications/Medications">Medications</a>
+                            <a href="~/SupportFromProfessionals/SupportFromProfessionals">Support from Professionals</a>
+                            <a href="~/OtherOptions/OtherOptions">Other Options</a>
+                        </div>
                     </li>
-                    @*<li class="nav-item">
-                            <a class="nav-link" href="post.html">Sample Post</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>*@
+                   
                 </ul>
             </div>
         </div>
@@ -212,7 +68,7 @@
     <div class="clearfix" style="margin-left: 130px">
         <h6><a href="~/Home/Index">Home</a> &gt; Spending Calculator</h6>
     </div>
-    <p id="error-page">
+    <div id="error-page">
         <div class="calculator">
             <style>
                 #fbuilder .fform h2 {
@@ -246,8 +102,12 @@
                     font-size: 20px;
                     font-weight: bold;
                 }
-            </style><form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
-                <input type="hidden" name="cp_calculatedfieldsf_id" value="6" /><pre style="display:none;"><!--noptimize--><script>form_structure_1 = [[{ "form_identifier": "", "name": "fieldname5", "shortlabel": "", "index": 0, "ftype": "fSectionBreak", "userhelp": "", "userhelpTooltip": false, "csslayout": "", "title": "", "fBuild": {}, "parent": "" }, { "form_identifier": "", "name": "fieldname17", "shortlabel": "", "index": 1, "ftype": "fnumber", "userhelp": "From 1 to 100", "userhelpTooltip": false, "csslayout": "", "title": "How many cigarettes do you smoke each day?", "predefined": "20", "predefinedClick": false, "required": false, "readonly": false, "size": "small", "thousandSeparator": "", "decimalSymbol": ".", "min": "1", "max": "1000", "formatDynamically": false, "dformat": "digits", "formats": ["digits", "number"], "fBuild": {}, "parent": "" }, { "form_identifier": "", "name": "fieldname19", "shortlabel": "", "index": 2, "ftype": "fnumber", "userhelp": "From 1 to 100", "userhelpTooltip": false, "csslayout": "", "title": "Years you have smoked", "predefined": "1", "predefinedClick": false, "required": false, "readonly": false, "size": "small", "thousandSeparator": "", "decimalSymbol": ".", "min": "1", "max": "100", "formatDynamically": false, "dformat": "digits", "formats": ["digits", "number"], "fBuild": {}, "parent": "" }, { "form_identifier": "", "name": "fieldname21", "shortlabel": "", "index": 3, "ftype": "fhtml", "userhelp": "", "userhelpTooltip": false, "csslayout": "", "fcontent": "\u003C!--BLOCK_ID_19--\u003E\u003Cbutton name=\u0022Go\u0022 type=\u0022button\u0022 class=\u0022btn201707110537 green calculate-button\u0022 onclick=\u0022\u0022\u003E  Go  \u003C\/button\u003E\u003Cstyle\u003E.btn201707110537{outline:none !important;display: inline-block; position: relative; margin: 10px; padding: 0 20px; text-align: center; text-decoration: none; font: bold 12px\/25px Arial, sans-serif; text-shadow: 1px 1px 1px rgba(255,255,255, .22); -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44); -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44); box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44); -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -o-transition: all 0.15s ease; -ms-transition: all 0.15s ease; transition: all 0.15s ease; } .btn201707110537:hover { -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5); -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5); box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5); } .btn201707110537:active { -webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0, .8); -moz-box-shadow: inset 0px 0px 3px rgba(0,0,0, .8); box-shadow: inset 0px 0px 3px rgba(0,0,0, .8); } .btn201707110537.green { color: #3e5706; background: #a5cd4e; \/* Old browsers *\/ background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%); \/* FF3.6+ *\/ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a)); \/* Chrome,Safari4+ *\/ background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); \/* Chrome10+,Safari5.1+ *\/ background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); \/* Opera 11.10+ *\/ background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); \/* IE10+ *\/ background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); \/* W3C *\/ } .btn201707110537.blue { color: #19667d; background: #70c9e3; \/* Old browsers *\/ background: -moz-linear-gradient(top,  #70c9e3 0%, #39a0be 100%); \/* FF3.6+ *\/ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c9e3), color-stop(100%,#39a0be)); \/* Chrome,Safari4+ *\/ background: -webkit-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); \/* Chrome10+,Safari5.1+ *\/ background: -o-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); \/* Opera 11.10+ *\/ background: -ms-linear-gradient(top,  #70c9e3 0%,#39a0be 100%); \/* IE10+ *\/ background: linear-gradient(top,  #70c9e3 0%,#39a0be 100%); \/* W3C *\/ } .btn201707110537.gray { color: #515151; background: #d3d3d3; \/* Old browsers *\/ background: -moz-linear-gradient(top,  #d3d3d3 0%, #8a8a8a 100%); \/* FF3.6+ *\/ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(100%,#8a8a8a)); \/* Chrome,Safari4+ *\/ background: -webkit-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); \/* Chrome10+,Safari5.1+ *\/ background: -o-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); \/* Opera 11.10+ *\/ background: -ms-linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); \/* IE10+ *\/ background: linear-gradient(top,  #d3d3d3 0%,#8a8a8a 100%); \/* W3C *\/ } .btn201707110537.big { padding: 0 40px; height: 45px; line-height: 45px !important; text-transform: uppercase; font: bold 20px\/22px Arial, sans-serif; } .btn201707110537.big span { display: block; text-transform: none; font: italic normal 12px\/18px Georgia, sans-serif; text-shadow: 1px 1px 1px rgba(255,255,255, .12); }\u003C\/style\u003E\u003Cscript\u003Evar fbuilderjQuery = fbuilderjQuery || jQuery; fbuilderjQuery(document).on('click','#fbuilder button.calculate-button.btn201707110537',function(){var $=fbuilderjQuery,f=$(this).closest('form'),i,j,s,t;if(f.length){i=f.attr('id');if((s=i.match(\/_\\d+$\/))!=null&&(t=$.fbuilder['forms'][s])!=null){t=t.getItems();$.fbuilder['calculator'].defaultCalc('#'+i);for(j in t)if(t[j].ftype=='fsummary')t[j].update();}}});fbuilderjQuery(document).on('click','#fbuilder button[type=\u0022reset\u0022].btn201707110537',function(){var $=fbuilderjQuery,f=$(this).closest('form'),i,s;if(f.length){i=f.attr('id');if((s=i.match(\/_\\d+$\/))!=null&&$.fbuilder['forms'][s]!=null){$.fbuilder['showHideDep']({'formIdentifier':s});$(\u0022#fieldlist\u0022+s+\u0022 .pbreak:not(.pb0)\u0022).css(\u0022display\u0022,\u0022none\u0022).find(\u0022.field\u0022).addClass(\u0022ignorepb\u0022);$(\u0022#fieldlist\u0022+s+\u0022 .pb0\u0022).css(\u0022display\u0022,\u0022block\u0022).find(\u0022.field\u0022).removeClass(\u0022ignorepb\u0022);}}});\u003C\/script\u003E\u003Cbutton name=\u0022Reset\u0022 type=\u0022reset\u0022 class=\u0022btn201707110537 gray\u0022 onclick=\u0022\u0022\u003EReset\u003C\/button\u003E\u003C!--END_BLOCK_ID_19--\u003E", "fBuild": {}, "parent": "" }, { "dependencies": [{ "rule": "", "complex": true, "fields": [""] }], "form_identifier": "", "name": "fieldname4", "shortlabel": "", "index": 4, "ftype": "fCalculated", "userhelp": "", "userhelpTooltip": false, "csslayout": ".cff-calculated-field {}", "title": "The cost of  your cigarette per month", "predefined": "0", "required": false, "size": "small", "toolbar": "default|mathematical", "eq": "(fieldname17\/20)*30*30", "suffix": "", "prefix": "$", "decimalsymbol": "                                                                                                  ", "groupingsymbol": ",", "readonly": true, "hidefield": false, "fBuild": {}, "parent": "" }, { "dependencies": [{ "rule": "", "complex": false, "fields": [""] }], "form_identifier": "", "name": "fieldname13", "shortlabel": "", "index": 5, "ftype": "fCalculated", "userhelp": "", "userhelpTooltip": false, "csslayout": "", "title": "The cost of  your cigarette so far", "predefined": "0", "required": false, "size": "small", "toolbar": "default|mathematical", "eq": "(fieldname17\/20)*30*30*12*fieldname19", "suffix": "", "prefix": "$", "decimalsymbol": "                                                              ", "groupingsymbol": ",", "readonly": true, "hidefield": false, "fBuild": {}, "parent": "" }], { "0": { "title": "Cost Calculator", "description": "How much are you really spending on cigarettes?", "formlayout": "top_aligned", "formtemplate": "cp_cff_pastel", "evalequations": 0, "evalequationsevent": "1", "autocomplete": 1, "persistence": 0, "customstyles": "#fbuilder .fform h2 { color: #000;  }\n\n#fbuilder, #fbuilder label,  \n#fbuilder span {  font-size:22px;  }\n\n#fbuilder input[type=number], \n#fbuilder textarea,\n#fbuilder select  { font-size:20px;  font-weight: bold;}\n\n\n.cp_cff_pastel #fbuilder input[type=text], \n#fbuilder textarea,\n#fbuilder select  { font-size:20px; font-weight: bold; }\n" }, "formid": "cp_calculatedfieldsf_pform_1" }];</script><!--/noptimize--></pre>
+            </style>
+            <form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
+                <input type="hidden" name="cp_calculatedfieldsf_id" value="6" />
+                <pre style="display:none;"><!--noptimize-->
+                <script src="~/Scripts/Calculator.js"></script>
+    <!--/noptimize--></pre>
                 <div id="fbuilder">
                     <div id="fbuilder_1">
                         <div id="formheader_1"></div>
@@ -256,96 +116,23 @@
                 </div>
                 <div class="clearer"></div>
             </form>
-            <link rel='stylesheet' id='cpcff_stylepublic-css' href='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/css/stylepublic.css?ver=5.2.3' type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_jquery_ui-css' href='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/css/cupertino/jquery-ui-1.8.20.custom.css?ver=5.2.3' type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/templates/10/style.css?ver=1.0.323' type='text/css' media='all' property="stylesheet" />
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/jQuery.stringify.js?ver=pro'></script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/jquery.validate.js?ver=5.2.3'></script>
+            <link rel='stylesheet' id='cpcff_stylepublic-css' href="~/css/calcultor/stylepublic.css" type='text/css' media='all' property="stylesheet" />
+            <link rel='stylesheet' id='cpcff_jquery_ui-css' href="~/css/calcultor/jquery-ui-1.8.20.custom.css" type='text/css' media='all' property="stylesheet" />
+            <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href="~/css/calcultor/style.css" type='text/css' media='all' property="stylesheet" />
+            @Scripts.Render("~/bundles/calculator")
+            <link href="~/css/calcultor/stylepublic.css" rel="stylesheet" />
             <script type='text/javascript'>
                 /* <![CDATA[ */
                 var cp_calculatedfieldsf_fbuilder_config_1 = { "obj": "{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}" };
                 /* ]]> */
             </script>
             <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/cache/all.js?ver=1.0.323'></script>
-            <script type="text/template" id="tmpl-elementor-templates-modal__header">
-                <div class="elementor-templates-modal__header__logo-area"></div>
-                <div class="elementor-templates-modal__header__menu-area"></div>
-                <div class="elementor-templates-modal__header__items-area">
-                    <# if ( closeType ) { #>
-                        <div class="elementor-templates-modal__header__close elementor-templates-modal__header__close--{{{ closeType }}} elementor-templates-modal__header__item">
-                            <# if ( 'skip' = = =closeType ) { #>
-                                <span>Skip</span>
-                                <# } #>
-                                    <i class="eicon-close" aria-hidden="true" title="Close"></i>
-                                    <span class="elementor-screen-only">Close</span>
-                        </div>
-                        <# } #>
-                            <div id="elementor-template-library-header-tools"></div>
-                </div>
-            </script>
-
-            <script type="text/template" id="tmpl-elementor-templates-modal__header__logo">
-                <span class="elementor-templates-modal__header__logo__icon-wrapper">
-                    <i class="eicon-elementor"></i>
-                </span>
-                <span class="elementor-templates-modal__header__logo__title">{{{ title }}}</span>
-            </script>
-            <script type="text/template" id="tmpl-elementor-finder">
-                <div id="elementor-finder__search">
-                    <i class="eicon-search"></i>
-                    <input id="elementor-finder__search__input" placeholder="Type to find anything in Elementor">
-                </div>
-                <div id="elementor-finder__content"></div>
-            </script>
-
-            <script type="text/template" id="tmpl-elementor-finder-results-container">
-                <div id="elementor-finder__no-results">No Results Found</div>
-                <div id="elementor-finder__results"></div>
-            </script>
-
-            <script type="text/template" id="tmpl-elementor-finder__results__category">
-                <div class="elementor-finder__results__category__title">{{{ title }}}</div>
-                <div class="elementor-finder__results__category__items"></div>
-            </script>
-
-            <script type="text/template" id="tmpl-elementor-finder__results__item">
-                <a href="{{ url }}" class="elementor-finder__results__item__link">
-                    <div class="elementor-finder__results__item__icon">
-                        <i class="eicon-{{{ icon }}}"></i>
-                    </div>
-                    <div class="elementor-finder__results__item__title">{{{ title }}}</div>
-                    <# if ( description ) { #>
-                        <div class="elementor-finder__results__item__description">- {{{ description }}}</div>
-                        <# } #>
-                </a>
-                <# if ( actions.length ) { #>
-                    <div class="elementor-finder__results__item__actions">
-                        <# jQuery.each( actions, function() { #>
-                            <a class="elementor-finder__results__item__action elementor-finder__results__item__action--{{ this.name }}" href="{{ this.url }}" target="_blank">
-                                <i class="eicon-{{{ this.icon }}}"></i>
-                            </a>
-                            <# } ); #>
-                    </div>
-                    <# } #>
-            </script>
-            <script>
-                /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
-            </script>
+       
         </div>
-    </p>
-    <div class="clearfix" style="margin-right: 130px">
-        <a class="buttonCa float-right" href="~/Calculator/Calculator"><span>Future Spending?</span></a>
-        @*<a class="btn btn-primary float-right" href="~/Calculator/Calculator">Calculate it! &rarr;</a>*@
+    </div>
+    <div class="clearfix" style="margin-right: 230px">
+        <a class="buttonCa float-right "style="font-size: 18px;width: 210px;" href="~/Calculator/Calculator">
+        <span>Future Spending?</span></a>
     </div>
     <hr>
 

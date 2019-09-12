@@ -182,6 +182,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CalculatorController.cs" />
+    <Compile Include="Controllers\FutureSpendingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MedicationsController.cs" />
@@ -298,8 +299,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="css\clean-blog.css" />
-    <Content Include="css\clean-blog.min.css" />
+    <Content Include="css\calcultor\calculator.css" />
+    <Content Include="css\calcultor\jquery-ui-1.8.20.custom.css" />
+    <Content Include="css\calcultor\style.css" />
+    <Content Include="css\calcultor\stylepublic.css" />
+    <Content Include="css\quitpath.css" />
+    <Content Include="css\quitpath.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -341,6 +346,19 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <None Include="Properties\PublishProfiles\quitpathway - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Calculator.js" />
+    <Content Include="Scripts\Calculator\button.min.js" />
+    <Content Include="Scripts\Calculator\core.min.js" />
+    <Content Include="Scripts\Calculator\datepicker.min.js" />
+    <Content Include="Scripts\Calculator\jquery-migrate.min.js" />
+    <Content Include="Scripts\Calculator\jquery.js" />
+    <Content Include="Scripts\Calculator\jQuery.stringify.js" />
+    <Content Include="Scripts\Calculator\jquery.validate.js" />
+    <Content Include="Scripts\Calculator\mouse.min.js" />
+    <Content Include="Scripts\Calculator\position.min.js" />
+    <Content Include="Scripts\Calculator\slider.min.js" />
+    <Content Include="Scripts\Calculator\tooltip.min.js" />
+    <Content Include="Scripts\Calculator\widget.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -454,6 +472,7 @@
     <Content Include="Views\NicotineReplacements\NicotineReplacements.cshtml" />
     <Content Include="Views\OtherOptions\OtherOptions.cshtml" />
     <Content Include="Views\SupportFromProfessionals\SupportFromProfessionals.cshtml" />
+    <Content Include="Views\FutureSpending\FutureSpending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
