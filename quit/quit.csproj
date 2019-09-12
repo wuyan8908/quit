@@ -189,6 +189,8 @@
     <Compile Include="Controllers\OtherOptionsController.cs" />
     <Compile Include="Controllers\QuittingPlanController.cs" />
     <Compile Include="Controllers\QuittingSupportController.cs" />
+    <Compile Include="Controllers\ResultController.cs" />
+    <Compile Include="Controllers\SurveyController.cs" />
     <Compile Include="Controllers\SupportFromProfessionalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -322,6 +324,7 @@
     <Content Include="img\QuittingSupport-QuittingSupportOptions-image.jpg" />
     <Content Include="img\QuittingSupport-SupportFromProfessionals-image.jpg" />
     <Content Include="img\SupportFromProfessionals-image.png" />
+    <Content Include="js\timer.js" />
     <Content Include="js\clean-blog.js" />
     <Content Include="js\clean-blog.min.js" />
     <Content Include="js\contact_me.js" />
@@ -456,6 +459,12 @@
     <Content Include="Views\OtherOptions\OtherOptions.cshtml" />
     <Content Include="Views\SupportFromProfessionals\SupportFromProfessionals.cshtml" />
     <Content Include="Views\QuittingPlan\QuittingPlan.cshtml" />
+    <Content Include="Views\Survey\Survey.cshtml" />
+    <Content Include="Views\Result\CalmNegativeEmotions.cshtml" />
+    <Content Include="Views\Result\SocialSmoking.cshtml" />
+    <Content Include="Views\Result\Indulgence.cshtml" />
+    <Content Include="Views\Result\Addiction.cshtml" />
+    <Content Include="Views\Result\SensorimotorStimulation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
