@@ -187,6 +187,7 @@
     <Compile Include="Controllers\MedicationsController.cs" />
     <Compile Include="Controllers\NicotineReplacementsController.cs" />
     <Compile Include="Controllers\OtherOptionsController.cs" />
+    <Compile Include="Controllers\QuittingPlanController.cs" />
     <Compile Include="Controllers\QuittingSupportController.cs" />
     <Compile Include="Controllers\SupportFromProfessionalsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -454,6 +455,7 @@
     <Content Include="Views\NicotineReplacements\NicotineReplacements.cshtml" />
     <Content Include="Views\OtherOptions\OtherOptions.cshtml" />
     <Content Include="Views\SupportFromProfessionals\SupportFromProfessionals.cshtml" />
+    <Content Include="Views\QuittingPlan\QuittingPlan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
