@@ -182,14 +182,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CalculatorController.cs" />
-    <Compile Include="Controllers\FutureSpendingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MedicationsController.cs" />
-    <Compile Include="Controllers\NicotineReplacementsController.cs" />
-    <Compile Include="Controllers\OtherOptionsController.cs" />
     <Compile Include="Controllers\QuittingSupportController.cs" />
-    <Compile Include="Controllers\SupportFromProfessionalsController.cs" />
+    <Compile Include="Controllers\SurveyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -468,11 +464,16 @@
     <Content Include="scss\_variables.scss" />
     <Content Include="Views\Calculator\Calculator.cshtml" />
     <Content Include="Views\QuittingSupport\QuittingSupport.cshtml" />
-    <Content Include="Views\Medications\Medications.cshtml" />
-    <Content Include="Views\NicotineReplacements\NicotineReplacements.cshtml" />
-    <Content Include="Views\OtherOptions\OtherOptions.cshtml" />
-    <Content Include="Views\SupportFromProfessionals\SupportFromProfessionals.cshtml" />
-    <Content Include="Views\FutureSpending\FutureSpending.cshtml" />
+    <Content Include="Views\Survey\Addiction.cshtml" />
+    <Content Include="Views\Survey\CalmNegativeEmotions.cshtml" />
+    <Content Include="Views\Survey\Indulgence.cshtml" />
+    <Content Include="Views\Survey\SensorimotorStimulation.cshtml" />
+    <Content Include="Views\Survey\SocialSmoking.cshtml" />
+    <Content Include="Views\Survey\Survey.cshtml" />
+    <Content Include="Views\QuittingSupport\Medications.cshtml" />
+    <Content Include="Views\QuittingSupport\NicotineReplacements.cshtml" />
+    <Content Include="Views\QuittingSupport\OtherOptions.cshtml" />
+    <Content Include="Views\QuittingSupport\SupportFromProfessionals.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
