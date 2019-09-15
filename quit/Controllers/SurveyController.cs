@@ -6,26 +6,30 @@ using System.Web.Mvc;
 
 namespace quit.Controllers
 {
-    public class QuittingSupportController : Controller
+    public class SurveyController : Controller
     {
-        // GET: QuittingSupport
-        public ActionResult QuittingSupport()
+        // GET: Survey
+        public ActionResult Survey()
         {
             return View();
         }
-        public ActionResult Medications()
+        public ActionResult Addiction()
         {
             return View();
         }
-        public ActionResult NicotineReplacements()
+        public ActionResult CalmNegativeEmotions()
         {
             return View();
         }
-        public ActionResult OtherOptions()
+        public ActionResult Indulgence()
         {
             return View();
         }
-        public ActionResult SupportFromProfessionals()
+        public ActionResult SensorimotorStimulation()
+        {
+            return View();
+        }
+        public ActionResult SocialSmoking()
         {
             return View();
         }
