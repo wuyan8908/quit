@@ -29,5 +29,10 @@ namespace quit.Controllers
         {
             return View();
         }
+
+        public ActionResult QuittingSupportOptions()
+        {
+            return View();
+        }
     }
 }
