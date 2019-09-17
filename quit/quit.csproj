@@ -475,6 +475,7 @@
     <Content Include="Views\QuittingSupport\OtherOptions.cshtml" />
     <Content Include="Views\QuittingSupport\SupportFromProfessionals.cshtml" />
     <Content Include="Views\QuittingSupport\QuittingSupportOptions.cshtml" />
+    <Content Include="Views\Survey\Habit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

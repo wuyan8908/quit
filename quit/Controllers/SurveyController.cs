@@ -21,6 +21,11 @@ namespace quit.Controllers
         {
             return View();
         }
+
+        public ActionResult Habit()
+        {
+            return View();
+        }
         public ActionResult Indulgence()
         {
             return View();
