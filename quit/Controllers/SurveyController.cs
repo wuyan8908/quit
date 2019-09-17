@@ -13,6 +13,10 @@ namespace quit.Controllers
         {
             return View();
         }
+        public ActionResult Survey2()
+        {
+            return View();
+        }
         public ActionResult Addiction()
         {
             return View();

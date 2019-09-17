@@ -71,77 +71,90 @@
     <div class="clearfix" style="margin-left: 130px">
         <h6><a href="~/Home/Index">Home</a> &gt; Spending Calculator</h6>
     </div>
-    <div id="error-page">
-        <div class="calculator">
-            <style>
-                #fbuilder .fform h2 {
-                    color: #000;
-                }
+    <div class="container">
+        
+            <div class="calculator">
+                <style>
 
-                #fbuilder, #fbuilder label,
-                #fbuilder span {
-                    font-size: 22px;
-                }
+                    #fbuilder .fform h2 {
+                        color: #000;
+                        font-size: 28px;
+                        font-weight: bold;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
 
-                    #fbuilder input[type=number],
+                    #fbuilder, #fbuilder label,
+                    #fbuilder span {
+                        font-size: 22px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+                        #fbuilder input[type=number],
+                        #fbuilder textarea,
+                        #fbuilder select {
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        }
+
+                    .cp_cff_pastel #fbuilder .fields.section_breaks {
+                        border: 0;
+                        border-radius: 4px;
+                        background: #d2d9dd;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        max-height: 5px;
+                    }
+
+                    .cp_cff_pastel #fbuilder input[type=text],
                     #fbuilder textarea,
                     #fbuilder select {
                         font-size: 20px;
                         font-weight: bold;
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     }
-
-                .cp_cff_pastel #fbuilder .fields.section_breaks {
-                    border: 0;
-                    border-radius: 4px;
-                    background: #d2d9dd;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    max-height: 5px;
-                }
-
-                .cp_cff_pastel #fbuilder input[type=text],
-                #fbuilder textarea,
-                #fbuilder select {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-            </style>
-            <form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
-                <input type="hidden" name="cp_calculatedfieldsf_id" value="6" />
-                <pre style="display:none;"><!--noptimize-->
-                <script src="~/Scripts/Calculator.js"></script>
+                </style>
+                <form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
+                    <input type="hidden" name="cp_calculatedfieldsf_id" value="6" />
+                    <pre style="display:none;"><!--noptimize-->
+                    <script src="~/Scripts/Calculator.js"></script>
     <!--/noptimize--></pre>
-                <div id="fbuilder">
-                    <div id="fbuilder_1">
-                        <div id="formheader_1"></div>
-                        <div id="fieldlist_1"></div>
+                    <div id="fbuilder">
+                        <div id="fbuilder_1">
+                            <div id="formheader_1"></div>
+                            <div id="fieldlist_1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="clearer"></div>
-            </form>
-            <link rel='stylesheet' id='cpcff_stylepublic-css' href="~/css/calcultor/stylepublic.css" type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_jquery_ui-css' href="~/css/calcultor/jquery-ui-1.8.20.custom.css" type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href="~/css/calcultor/style.css" type='text/css' media='all' property="stylesheet" />
-            @Scripts.Render("~/bundles/calculator")
-            <link href="~/css/calcultor/stylepublic.css" rel="stylesheet" />
-            <script type='text/javascript'>
-                /* <![CDATA[ */
-                var cp_calculatedfieldsf_fbuilder_config_1 = { "obj": "{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}" };
-                /* ]]> */
-            </script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/cache/all.js?ver=1.0.323'></script>
-            <hr><hr>
-            <iframe src="https://simeonthomas2.shinyapps.io/Visualizations/" width="795" height="685">
-            </iframe>
+                    <div class="clearer"></div>
+                </form>
+                <link rel='stylesheet' id='cpcff_stylepublic-css' href="~/css/calcultor/stylepublic.css" type='text/css' media='all' property="stylesheet" />
+                <link rel='stylesheet' id='cpcff_jquery_ui-css' href="~/css/calcultor/jquery-ui-1.8.20.custom.css" type='text/css' media='all' property="stylesheet" />
+                <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href="~/css/calcultor/style.css" type='text/css' media='all' property="stylesheet" />
+                @Scripts.Render("~/bundles/calculator")
+                <link href="~/css/calcultor/stylepublic.css" rel="stylesheet" />
+                <script type='text/javascript'>
+                    /* <![CDATA[ */
+                    var cp_calculatedfieldsf_fbuilder_config_1 = { "obj": "{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}" };
+                    /* ]]> */
+                </script>
+                <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/cache/all.js?ver=1.0.323'></script>
 
-            <script type='text/javascript'>var divElement = document.getElementById('viz1568544432682'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
+
+                <script type='text/javascript'>var divElement = document.getElementById('viz1568544432682'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+            </div>
         </div>
+    
+   
+    <div class="card">
+        <iframe src="https://simeonthomas2.shinyapps.io/Visualizations/" height="685">
+        </iframe>
     </div>
     @*<div class="clearfix" style="margin-right: 230px">
-        <a class="buttonCa float-right "style="font-size: 18px;width: 210px;" href="~/Calculator/Calculator">
-        <span>Future Spending?</span></a>
-    </div>*@
+            <a class="buttonCa float-right "style="font-size: 18px;width: 210px;" href="~/Calculator/Calculator">
+            <span>Future Spending?</span></a>
+        </div>*@
     <hr>
 
     <!-- Footer -->
@@ -194,6 +207,32 @@
 
 
 <style>
+    .columnc1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+ 
+}
+.columnc2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         padding: 16px;
+         background-color: #f1f1f1;
+         margin-top:50px;
+         width:70%;
+         margin-left:15%;
+         margin-right:15%;
+
+    }
     header.masthead .site-heading {
         padding: 165px 0;
     }

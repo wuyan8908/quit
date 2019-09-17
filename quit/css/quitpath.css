@@ -436,12 +436,13 @@ footer .copyright {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-color: #343a40;
     min-width: 160px;
     font-weight: 600;
     font-size: 12px;
     z-index: 1;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    opacity:0.8;
 }
 
     .dropdown-content a {
@@ -481,7 +482,7 @@ footer .copyright {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    box-shadow: 0 3px #999;
+
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -507,7 +508,7 @@ footer .copyright {
 
     .buttonCa:active {
         background-color: #4184c6;
-        box-shadow: 0px 2px #666;
+    
         transform: translateY(4px);
     }
 
