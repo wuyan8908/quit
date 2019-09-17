@@ -37,5 +37,9 @@ namespace quit.Controllers
         {
             return View();
         }
+        public ActionResult Habit()
+        {
+            return View();
+        }
     }
 }

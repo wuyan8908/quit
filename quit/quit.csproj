@@ -453,6 +453,7 @@
     <Content Include="Views\QuittingSupport\QuittingSupportOptions.cshtml" />
     <Content Include="Views\Benefit\BenefitsOfQuitting.cshtml" />
     <Content Include="Views\Survey\Survey2.cshtml" />
+    <Content Include="Views\Survey\Habit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
