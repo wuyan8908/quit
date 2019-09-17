@@ -276,6 +276,7 @@
     <Content Include="css\calcultor\stylepublic.css" />
     <Content Include="css\quitpath.css" />
     <Content Include="css\quitpath.min.css" />
+    <Content Include="css\Survey.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -454,6 +455,12 @@
     <Content Include="Views\Benefit\BenefitsOfQuitting.cshtml" />
     <Content Include="Views\Survey\Survey2.cshtml" />
     <Content Include="Views\Survey\Habit.cshtml" />
+    <Content Include="Views\Survey\Addiction2.cshtml" />
+    <Content Include="Views\Survey\CalmNegativeEmotions2.cshtml" />
+    <Content Include="Views\Survey\Habit2.cshtml" />
+    <Content Include="Views\Survey\Indulgence2.cshtml" />
+    <Content Include="Views\Survey\SensorimotorStimulation2.cshtml" />
+    <Content Include="Views\Survey\SocialSmoking2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

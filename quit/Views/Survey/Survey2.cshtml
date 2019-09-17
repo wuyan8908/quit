@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="~/css/quitpath.css" rel="stylesheet">
+    <link href="~/css/Survey.css" rel="stylesheet">
     <script type="text/javascript">
         $(document).ready(function () {
             $(".button1").click(function () {
@@ -57,12 +58,12 @@
                     }
                 }
                 switch (index) {
-                    case 0: window.location.href = "../Survey/CalmNegativeEmotions"; break;
-                    case 1: window.location.href = "../Survey/SocialSmoking"; break;
-                    case 2: window.location.href = "../Survey/Indulgence"; break;
-                    case 3: window.location.href = "../Survey/Addiction"; break;
-                    case 4: window.location.href = "../Survey/SensorimotorStimulation"; break;
-                    case 5: //window.location.href="../Survey/Habit";break;
+                    case 0: window.location.href = "../Survey/CalmNegativeEmotions2"; break;
+                    case 1: window.location.href = "../Survey/SocialSmoking2"; break;
+                    case 2: window.location.href = "../Survey/Indulgence2"; break;
+                    case 3: window.location.href = "../Survey/Addiction2"; break;
+                    case 4: window.location.href = "../Survey/SensorimotorStimulation2"; break;
+                    case 5: window.location.href = "../Survey/Habit2";break;
                 }
 
             });
@@ -135,12 +136,12 @@
         <h6><a href="~/Home/Index">Home</a> &gt; Survey</h6>
     </div>
     <!-- Main Content -->
-    <div class="center">
-        <input type="button" class="button2" name="Smoker" value="Smoker" href="../Survey/Survey">
-        <input type="button" class="button3" name="Partner" value="Partner" href="../Survey/Survey2">
+    <div align="center">
+        <input type="button" class="blue button button2" name="Smoker" value="Smoker" href="../Survey/Survey">
+        <input type="button" class="blue button button3" name="Partner" value="Partner" href="../Survey/Survey2">
 
     </div>
-    <div class="card">
+    <div class="card" style="background-color:#e4eaf2">
         <form name="form1" method="post" action="" onsubmit="return form_check();">
 
             <table width="100%" border="0" class="9p">
@@ -153,49 +154,53 @@
                         <td height="24" class="STYLE22">
                             <a name="question1table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 1.When does your partner usually smoke?</b><br><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 1.</b>
+                            <br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner usually smoke?</b>
+                            <br>
+                            <br>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a1"><input name="question1" type="radio" value="A" id="1a1"> A. They smoke when they’re stressed</label>
+                            <label class="gray button" for="1a1"><input name="question1" type="radio" value="A" id="1a1">A. They smoke when they’re stressed.</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a2"><input name="question1" type="radio" value="B" id="1a2"> B. They smoke when they’re out with friends</label>
+                            <label class="gray button" for="1a2"><input name="question1" type="radio" value="B" id="1a2">B. They smoke when they’re out with friends.</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a3"><input type="radio" name="question1" value="F" id="1a3"> C. They smoke at the same set times each day</label>
+                            <label class="gray button" for="1a3"><input type="radio" name="question1" value="F" id="1a3">C. They smoke at the same set times each day.</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a4"><input type="radio" name="question1" value="D" id="1a4"> D. They smoke when they feel a craving</label>
+                            <label class="gray button" for="1a4"><input type="radio" name="question1" value="D" id="1a4">D. They smoke when they feel a craving.</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a5"><input type="radio" name="question1" value="A" id="1a5"> E. They smoke when they want a reward</label>
+                            <label class="gray button" for="1a5"><input type="radio" name="question1" value="C" id="1a5">E. They smoke when they want a reward.</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="1a6"><input type="radio" name="question1" value="E" id="1a6"> F. They smoke when they’re bored</label>
+                            <label class="gray button" for="1a6"><input type="radio" name="question1" value="E" id="1a6">F. They smoke when they’re bored.</label>
                         </td>
                     </tr>
 
@@ -203,49 +208,50 @@
                         <td height="24" class="STYLE22">
                             <a name="question2table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 2. Which one best describes your partner’s view of their smoking?</b><br><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 2. </b><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Which one best describes your partner’s view of their smoking?</b><br><br>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a1"><input name="question2" type="radio" value="C" id="2a1"> A. Smoking is a treat</label>
+                            <label class="gray button" for="2a1"><input name="question2" type="radio" value="C" id="2a1">A. Smoking is a treat</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a2"><input name="question2" type="radio" value="A" id="2a2"> B. Smoking makes them feel better</label>
+                            <label class="gray button" for="2a2"><input name="question2" type="radio" value="A" id="2a2">B. Smoking makes them feel better</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a3"><input type="radio" name="question2" value="F" id="2a3"> C. Smoking is a habit they don’t think about</label>
+                            <label class="gray button" for="2a3"><input type="radio" name="question2" value="F" id="2a3">C. Smoking is a habit they don’t think about</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a4"><input type="radio" name="question2" value="B" id="2a4"> D. Smoking is part of going out with friends</label>
+                            <label class="gray button" for="2a4"><input type="radio" name="question2" value="B" id="2a4">D. Smoking is part of going out with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a5"><input type="radio" name="question2" value="D" id="2a5"> E. Smoking is something they can’t stop doing</label>
+                            <label class="gray button" for="2a5"><input type="radio" name="question2" value="D" id="2a5">E. Smoking is something they can’t stop doing</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="2a6"><input type="radio" name="question2" value="E" id="2a6"> F. Smoking is something they do to keep their hands busy</label>
+                            <label class="gray button" for="2a6"><input type="radio" name="question2" value="E" id="2a6">F. Smoking is something they do to keep their hands busy</label>
                         </td>
                     </tr>
 
@@ -253,131 +259,58 @@
                         <td height="24" class="STYLE22">
                             <a name="question3table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 3. When are they most likely to feel a craving to smoke?</b><br><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 3. </b><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When are they most likely to feel a craving to smoke?</b><br><br>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a1"><input name="question3" type="radio" value="A" id="3a1"> A. When they’re stressed</label>
+                            <label class="gray button" for="3a1"><input name="question3" type="radio" value="A" id="3a1">A. When they’re stressed</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a2"><input name="question3" type="radio" value="C" id="3a2"> B. When they need a boost</label>
+                            <label class="gray button" for="3a2"><input name="question3" type="radio" value="C" id="3a2">B. When they need a boost</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a3"><input type="radio" name="question3" value="D" id="3a3"> C. When they haven’t smoked for a while</label>
+                            <label class="gray button" for="3a3"><input type="radio" name="question3" value="D" id="3a3">C. When they haven’t smoked for a while</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a4"><input type="radio" name="question3" value="B" id="3a4"> D. When they’re with friends</label>
+                            <label class="gray button" for="3a4"><input type="radio" name="question3" value="B" id="3a4">D.When they’re with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a5"><input type="radio" name="question3" value="E" id="3a5"> E. When they need something to do with my hands</label>
+                            <label class="gray button" for="3a5"><input type="radio" name="question3" value="E" id="3a5">E. When they need something to do with my hands</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="green button" for="3a6"><input type="radio" name="question3" value="F" id="3a6"> F. When it’s their usual time for a smoking break</label>
+                            <label class="gray button" for="3a6"><input type="radio" name="question3" value="F" id="3a6">F. When it’s their usual time for a smoking break</label>
                         </td>
                     </tr>
-                    @*
-                        <tr>
-                            <td height="24" class="STYLE22">
-                                <a name="the4ti"></a><br><br>
-
-                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 4</b><br><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="4a1"><input name="the4ti" type="radio" value="A" id="4a1">A. </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="4a2"><input name="the4ti" type="radio" value="B" id="4a2">B.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="4a3"><input type="radio" name="the4ti" value="C" id="4a3">C.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="4a4"><input type="radio" name="the4ti" value="D" id="4a4">D.</label>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td height="24" class="STYLE22">
-                                <a name="the5tijuanbiao"></a><br><br>
-
-                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 5</b><br><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="5a1"><input name="the5ti" type="radio" value="A" id="5a1">A. </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="5a2"><input name="the5ti" type="radio" value="B" id="5a2">B.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="5a3"><input type="radio" name="the5ti" value="D" id="5a3">C.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="green button" for="5a4"><input type="radio" name="the5ti" value="C" id="5a4">D.</label>
-                            </td>
-                        </tr>
-                    *@
 
                     <tr>
                         <td align="center" height="50" class="STYLE22">
                             <p>
                                 <br><br>
-                                <input type="button" class="button1" name="Submit" value="  Submit　" id="subquiz">
+                                <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
                             </p>
                             <p>&nbsp;</p>
                         </td>

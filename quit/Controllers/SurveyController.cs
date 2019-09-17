@@ -41,5 +41,29 @@ namespace quit.Controllers
         {
             return View();
         }
+        public ActionResult Addiction2()
+        {
+            return View();
+        }
+        public ActionResult CalmNegativeEmotions2()
+        {
+            return View();
+        }
+        public ActionResult Indulgence2()
+        {
+            return View();
+        }
+        public ActionResult SensorimotorStimulation2()
+        {
+            return View();
+        }
+        public ActionResult SocialSmoking2()
+        {
+            return View();
+        }
+        public ActionResult Habit2()
+        {
+            return View();
+        }
     }
 }
