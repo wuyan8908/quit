@@ -481,8 +481,7 @@ footer .copyright {
     width: 175px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
-
+    margin: 30px 80px 10px 0;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

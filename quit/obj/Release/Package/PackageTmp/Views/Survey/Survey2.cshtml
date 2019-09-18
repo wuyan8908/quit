@@ -94,6 +94,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="~/Home/Index">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Survey/Survey" style="color: #c9c9c9">Survey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
                         <div class="nav-link dropdown-content">
@@ -104,15 +110,12 @@
                             <a href="~/QuittingSupport/QuittingSupportOptions">Quitting Support Options</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Survey/Survey">Survey</a>
-                    </li>
                     @*<li class="nav-item">
-                            <a class="nav-link" href="post.html">Sample Post</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>*@
+            <a class="nav-link" href="post.html">Sample Post</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>*@
                 </ul>
             </div>
         </div>
@@ -126,7 +129,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1>Survey</h1>
+                        <h1>What Are Your Partner’s Motivations For Smoking?</h1>
                     </div>
                 </div>
             </div>
@@ -136,9 +139,9 @@
         <h6><a href="~/Home/Index">Home</a> &gt; Survey</h6>
     </div>
     <!-- Main Content -->
-    <div align="center">
-        <input type="button" class="blue button button2" name="Smoker" value="Smoker" href="../Survey/Survey">
-        <input type="button" class="blue button button3" name="Partner" value="Partner" href="../Survey/Survey2">
+    <div align="center" style="margin-bottom: 15px">
+        <input type="button" class="blue button button2 " name="Smoker" value="Smoker" href="../Survey/Survey">
+        <input type="button" class="blue button button3 " name="Partner" value="Partner"  style="background-color: hsl(148, 79%, 67%)">
 
     </div>
     <div class="card" style="background-color:#e4eaf2">
@@ -369,6 +372,9 @@
 
 
 <style>
+    .active {
+            background-color: #4CAF50;
+        }
     .center {
             
          margin-left:25%;
