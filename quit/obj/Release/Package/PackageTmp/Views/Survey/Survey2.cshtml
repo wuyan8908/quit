@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <title>Quit Pathway</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/quitpath.css" rel="stylesheet">
+    <link href="~/css/Survey.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".button1").click(function () {
+                var answer = [
+                    $("input[name='question1']:checked").val(),
+                    $("input[name='question2']:checked").val(),
+                    $("input[name='question3']:checked").val()
+                ];
+                for (var i = 0; i < answer.length; i++) {
+                    if (answer[i] == null) {
+                        alert("Please finish all the questions first");
+                        return;
+                    }
+                }
+
+                var result = [0, 0, 0, 0, 0, 0];
+                var score = [0, 0, 0, 0, 0, 0];
+
+                for (var i = 0; i < answer.length; i++) {
+                    switch (answer[i]) {
+                        case 'A': ++result[0]; ++score[0]; break;
+                        case 'B': ++result[1]; ++score[1]; break;
+                        case 'C': ++result[2]; ++score[2]; break;
+                        case 'D': ++result[3]; ++score[3]; break;
+                        case 'E': ++result[4]; ++score[4]; break;
+                        case 'F': ++result[5]; ++score[5]; break;
+                    }
+                }
+                score.sort();
+                var index = 0;
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i] == score[5]) {
+                        index = i;
+                        break;
+                    }
+                }
+                switch (index) {
+                    case 0: window.location.href = "../Survey/CalmNegativeEmotions2"; break;
+                    case 1: window.location.href = "../Survey/SocialSmoking2"; break;
+                    case 2: window.location.href = "../Survey/Indulgence2"; break;
+                    case 3: window.location.href = "../Survey/Addiction2"; break;
+                    case 4: window.location.href = "../Survey/SensorimotorStimulation2"; break;
+                    case 5: window.location.href = "../Survey/Habit2";break;
+                }
+
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".button2").click(function () {
+                window.location.href = "../Survey/Survey";
+            });
+            $(".button3").click(function () {
+                window.location.href = "../Survey/Survey2";
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
+                        <div class="nav-link dropdown-content">
+                            <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
+                            <a href="~/QuittingSupport/Medications">Medications</a>
+                            <a href="~/QuittingSupport/SupportFromProfessionals">Support from Professionals</a>
+                            <a href="~/QuittingSupport/OtherOptions">Other Options</a>
+                            <a href="~/QuittingSupport/QuittingSupportOptions">Quitting Support Options</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Survey/Survey">Survey</a>
+                    </li>
+                    @*<li class="nav-item">
+                            <a class="nav-link" href="post.html">Sample Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>*@
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="        background-image: url('../../img/QuittingSupport-SupportFromProfessionals-image.jpg');
+">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Survey</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
+        <h6><a href="~/Home/Index">Home</a> &gt; Survey</h6>
+    </div>
+    <!-- Main Content -->
+    <div align="center">
+        <input type="button" class="blue button button2" name="Smoker" value="Smoker" href="../Survey/Survey">
+        <input type="button" class="blue button button3" name="Partner" value="Partner" href="../Survey/Survey2">
+
+    </div>
+    <div class="card" style="background-color:#e4eaf2">
+        <form name="form1" method="post" action="" onsubmit="return form_check();">
+
+            <table width="100%" border="0" class="9p">
+                <!--DWLayoutTable-->
+
+
+                <tbody>
+                    <tr>
+
+                        <td height="24" class="STYLE22">
+                            <a name="question1table"></a><br><br>
+
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 1.</b>
+                            <br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner usually smoke?</b>
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a1"><input name="question1" type="radio" value="A" id="1a1">A. They smoke when they’re stressed.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a2"><input name="question1" type="radio" value="B" id="1a2">B. They smoke when they’re out with friends.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a3"><input type="radio" name="question1" value="F" id="1a3">C. They smoke at the same set times each day.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a4"><input type="radio" name="question1" value="D" id="1a4">D. They smoke when they feel a craving.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a5"><input type="radio" name="question1" value="C" id="1a5">E. They smoke when they want a reward.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="1a6"><input type="radio" name="question1" value="E" id="1a6">F. They smoke when they’re bored.</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="24" class="STYLE22">
+                            <a name="question2table"></a><br><br>
+
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 2. </b><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Which one best describes your partner’s view of their smoking?</b><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a1"><input name="question2" type="radio" value="C" id="2a1">A. Smoking is a treat</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a2"><input name="question2" type="radio" value="A" id="2a2">B. Smoking makes them feel better</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a3"><input type="radio" name="question2" value="F" id="2a3">C. Smoking is a habit they don’t think about</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a4"><input type="radio" name="question2" value="B" id="2a4">D. Smoking is part of going out with friends</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a5"><input type="radio" name="question2" value="D" id="2a5">E. Smoking is something they can’t stop doing</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="2a6"><input type="radio" name="question2" value="E" id="2a6">F. Smoking is something they do to keep their hands busy</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="24" class="STYLE22">
+                            <a name="question3table"></a><br><br>
+
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 3. </b><br>
+                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When are they most likely to feel a craving to smoke?</b><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a1"><input name="question3" type="radio" value="A" id="3a1">A. When they’re stressed</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a2"><input name="question3" type="radio" value="C" id="3a2">B. When they need a boost</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a3"><input type="radio" name="question3" value="D" id="3a3">C. When they haven’t smoked for a while</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a4"><input type="radio" name="question3" value="B" id="3a4">D.When they’re with friends</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a5"><input type="radio" name="question3" value="E" id="3a5">E. When they need something to do with my hands</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" valign="top" class="STYLE22">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label class="gray button" for="3a6"><input type="radio" name="question3" value="F" id="3a6">F. When it’s their usual time for a smoking break</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" height="50" class="STYLE22">
+                            <p>
+                                <br><br>
+                                <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
+                            </p>
+                            <p>&nbsp;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Quit Pathway 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/vendor/jquery/jquery.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="~/js/clean-blog.js"></script>
+
+</body>
+
+</html>
+
+
+<style>
+    .center {
+            
+         margin-left:25%;
+         margin-right:25%;
+    
+    
+    }
+
+    .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         padding: 16px;
+         background-color: #f1f1f1;
+         width:50%;
+         margin-left:25%;
+         margin-right:25%;
+
+    }
+    header.masthead .site-heading {
+        padding: 165px 0;
+    }
+
+    header.masthead {
+        height: 400px;
+    }
+
+    .container {
+        max-width: 1800px;
+    }
+</style>
