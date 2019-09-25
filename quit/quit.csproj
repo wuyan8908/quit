@@ -284,6 +284,7 @@
     <Content Include="img\about-bg.jpg" />
     <Content Include="img\Addiction_bg.jpg" />
     <Content Include="img\answer_bg.jpg" />
+    <Content Include="img\benefit.png" />
     <Content Include="img\cigarette.jpg" />
     <Content Include="img\coins_bg.jpg" />
     <Content Include="img\concept_bg.jpg" />
