@@ -9,7 +9,7 @@
 Usage:
 	
 	Default button: 			<a href="" class="button">Label</a>
-	More fancy with icon: 		<a href="" class="button orange glossy" data-icon="鈽�">Label</a>
+	More fancy with icon: 		<a href="" class="button orange glossy" data-icon="">Label</a>
 	
 Following additional class names are supported:
 		

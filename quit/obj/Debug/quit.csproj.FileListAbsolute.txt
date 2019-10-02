@@ -378,3 +378,4 @@ D:\study\5120\demo4\quit\obj\Debug\quit.csproj.CoreCompileInputs.cache
 D:\study\5120\demo4\quit\obj\Debug\quit.csproj.CopyComplete
 D:\study\5120\demo4\quit\obj\Debug\quit.dll
 D:\study\5120\demo4\quit\obj\Debug\quit.pdb
+D:\study\5120\demo1\quit\quit\obj\Debug\quit.csprojAssemblyReference.cache

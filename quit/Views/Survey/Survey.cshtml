@@ -21,64 +21,82 @@
     <!-- Custom styles for this template -->
     <link href="~/css/quitpath.css" rel="stylesheet">
     <link href="~/css/Survey.css" rel="stylesheet">
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button1").click(function () {
-                var answer = [
-                    $("input[name='question1']:checked").val(),
-                    $("input[name='question2']:checked").val(),
-                    $("input[name='question3']:checked").val()
-                ];
-                for (var i = 0; i < answer.length; i++) {
-                    if (answer[i] == null) {
-                        alert("Please finish all the questions first");
-                        return;
+   
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".button1").click(function () {
+                    var answer= [];
+                    for (var i = 1; i < 4; i++) {
+                        for (var j = 1; j < 7; j++) {
+                            var QuID = i * 10 + j;
+                            var checkBox = document.getElementById(QuID.toString());
+                            if (checkBox.checked == true) {
+                                var a = "input[id='" + QuID + "']:checked";
+                                var b = $(a).val();
+                                answer.push(b);
+                            }
+                        }
                     }
-                }
-
-                var result = [0, 0, 0, 0, 0, 0];
-                var score = [0, 0, 0, 0, 0, 0];
-
-                for (var i = 0; i < answer.length; i++) {
-                    switch (answer[i]) {
-                        case 'A': ++result[0]; ++score[0]; break;
-                        case 'B': ++result[1]; ++score[1]; break;
-                        case 'C': ++result[2]; ++score[2]; break;
-                        case 'D': ++result[3]; ++score[3]; break;
-                        case 'E': ++result[4]; ++score[4]; break;
-                        case 'F': ++result[5]; ++score[5]; break;
+                    for (var i = 0; i < answer.length; i++) {
+                        if (answer[i] == null) {
+                            alert("Please finish all the questions first");
+                            return;
+                        }
                     }
-                }
-                score.sort();
-                var index = 0;
-                for (var i = 0; i < result.length; i++) {
-                    if (result[i] == score[5]) {
-                        index = i;
-                        break;
-                    }
-                }
-                switch (index) {
-                    case 0: window.location.href = "../Survey/CalmNegativeEmotions"; break;
-                    case 1: window.location.href = "../Survey/SocialSmoking"; break;
-                    case 2: window.location.href = "../Survey/Indulgence"; break;
-                    case 3: window.location.href = "../Survey/Addiction"; break;
-                    case 4: window.location.href = "../Survey/SensorimotorStimulation"; break;
-                    case 5: window.location.href = "../Survey/Habit";break;
-                }
 
+                    var result = [0, 0, 0, 0, 0, 0];
+                    var score = [0, 0, 0, 0, 0, 0];
+
+                    for (var i = 0; i < answer.length; i++) {
+                        switch (answer[i]) {
+                            case 'A': ++result[0]; ++score[0]; break;
+                            case 'B': ++result[1]; ++score[1]; break;
+                            case 'C': ++result[2]; ++score[2]; break;
+                            case 'D': ++result[3]; ++score[3]; break;
+                            case 'E': ++result[4]; ++score[4]; break;
+                            case 'F': ++result[5]; ++score[5]; break;
+                        }
+                    }
+                    score.sort();
+                    var index = 0;
+                    if (score[5] == score[4]) {
+                        for (var i = 0; i < result.length; i++) {
+                            if (result[i] == score[5]) {
+                                index = i;
+                            }
+                        }
+                    }
+                    else {
+                        for (var i = 0; i < result.length; i++) {
+                            if (result[i] == score[5]) {
+                                index = i;
+                                break;
+                            }
+                        }
+                    }
+                    switch (index) {
+                        case 0: window.location.href = "../Survey/CalmNegativeEmotions"; break;
+                        case 1: window.location.href = "../Survey/SocialSmoking"; break;
+                        case 2: window.location.href = "../Survey/Indulgence"; break;
+                        case 3: window.location.href = "../Survey/Addiction"; break;
+                        case 4: window.location.href = "../Survey/SensorimotorStimulation"; break;
+                        case 5: window.location.href = "../Survey/Habit"; break;
+                    }
+
+
+                });
             });
-        });
 
     </script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button2").click(function () {
-                window.location.href = "../Survey/Survey";
+                $(document).ready(function () {
+                    $(".button2").click(function () {
+                        window.location.href = "../Survey/Survey";
+                    });
+                $(".button3").click(function () {
+                    window.location.href = "../Survey/Survey2";
+                });
             });
-            $(".button3").click(function () {
-                window.location.href = "../Survey/Survey2";
-            });
-        });
     </script>
 </head>
 
@@ -105,9 +123,9 @@
                         <div class="nav-link dropdown-content">
                             <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
                             <a href="~/QuittingSupport/Medications">Medications</a>
-                            <a href="~/QuittingSupport/SupportFromProfessionals">Support from Professionals</a>
+                            <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
                             <a href="~/QuittingSupport/OtherOptions">Other Options</a>
-                            <a href="~/QuittingSupport/QuittingSupportOptions">Quitting Support Options</a>
+                            <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
                         </div>
                     </li>
                     @*<li class="nav-item">
@@ -167,42 +185,42 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a1"><input name="question1" type="checkbox" value="A" id="1a1"> A. I smoke when I feel stressed</label>
+                            <label class="gray button" for="11"><input name="question1" type="checkbox" value="A" id="11"> A. I smoke when I feel stressed</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a2"><input name="question1" type="checkbox" value="B" id="1a2"> B. I smoke when I am with friends</label>
+                            <label class="gray button" for="12"><input name="question1" type="checkbox" value="B" id="12"> B. I smoke when I am with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a3"><input type="checkbox" name="question1" value="F" id="1a3"> C. I smoke at the same set times each day</label>
+                            <label class="gray button" for="13"><input type="checkbox" name="question1" value="F" id="13"> C. I smoke at the same set times each day</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a4"><input type="checkbox" name="question1" value="D" id="1a4"> D. I smoke when I feel a craving</label>
+                            <label class="gray button" for="14"><input type="checkbox" name="question1" value="D" id="14"> D. I smoke when I feel a craving</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a5"><input type="checkbox" name="question1" value="C" id="1a5"> E. I smoke when I want to reward myself</label>
+                            <label class="gray button" for="15"><input type="checkbox" name="question1" value="C" id="15"> E. I smoke when I want to reward myself</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a6"><input type="checkbox" name="question1" value="E" id="1a6"> F. I smoke when I am bored</label>
+                            <label class="gray button" for="16"><input type="checkbox" name="question1" value="E" id="16"> F. I smoke when I am bored</label>
                         </td>
                     </tr>
 
@@ -218,42 +236,42 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a1"><input name="question2" type="checkbox" value="C" id="2a1"> A. Smoking is a treat</label>
+                            <label class="gray button" for="21"><input name="question2" type="checkbox" value="F" id="21"> A. Smoking is a habit I don't think about</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a2"><input name="question2" type="checkbox" value="A" id="2a2"> B. Smoking makes me feel better</label>
+                            <label class="gray button" for="22"><input name="question2" type="checkbox" value="A" id="22"> B. Smoking makes me feel better</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a3"><input type="checkbox" name="question2" value="F" id="2a3"> C. Smoking is a habit I don't think about</label>
+                            <label class="gray button" for="23"><input type="checkbox" name="question2" value="C" id="23"> C. Smoking is a treat</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a4"><input type="checkbox" name="question2" value="B" id="2a4"> D. Smoking is part of going out with friends</label>
+                            <label class="gray button" for="24"><input type="checkbox" name="question2" value="B" id="24"> D. Smoking is part of going out with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a5"><input type="checkbox" name="question2" value="D" id="2a5"> E. Smoking is something I can't stop doing</label>
+                            <label class="gray button" for="25"><input type="checkbox" name="question2" value="E" id="25"> E. Smoking keeps my hands busy</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a6"><input type="checkbox" name="question2" value="E" id="2a6"> F. Smoking keeps my hands busy</label>
+                            <label class="gray button" for="26"><input type="checkbox" name="question2" value="D" id="26"> F. Smoking is something I can't stop doing</label>
                         </td>
                     </tr>
 
@@ -269,42 +287,42 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a1"><input name="question3" type="checkbox" value="A" id="3a1"> A. When I am stressed</label>
+                            <label class="gray button" for="31"><input name="question3" type="checkbox" value="B" id="31"> A. When I am with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a2"><input name="question3" type="checkbox" value="C" id="3a2"> B. When I need a boost</label>
+                            <label class="gray button" for="32"><input name="question3" type="checkbox" value="C" id="32"> B. When I need a boost</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a3"><input type="checkbox" name="question3" value="D" id="3a3"> C. When I haven't smoked for a while</label>
+                            <label class="gray button" for="33"><input type="checkbox" name="question3" value="D" id="33"> C. When I haven't smoked for a while</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a4"><input type="checkbox" name="question3" value="B" id="3a4"> D. When I am with friends</label>
+                            <label class="gray button" for="34"><input type="checkbox" name="question3" value="A" id="34"> D. When I am stressed</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a5"><input type="checkbox" name="question3" value="E" id="3a5"> E. When I need something to do with my hands</label>
+                            <label class="gray button" for="35"><input type="checkbox" name="question3" value="E" id="35"> E. When I need something to do with my hands</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a6"><input type="checkbox" name="question3" value="F" id="3a6"> F. When it's time for a smoking break</label>
+                            <label class="gray button" for="36"><input type="checkbox" name="question3" value="F" id="36"> F. When it's time for a smoking break</label>
                         </td>
                     </tr>
                   
