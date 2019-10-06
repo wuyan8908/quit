@@ -13,5 +13,21 @@ namespace quit.Controllers
         {
             return View();
         }
+        public ActionResult ColdTurkey()
+        {
+            return View();
+        }
+        public ActionResult ThreeMonth()
+        {
+            return View();
+        }
+        public ActionResult SixMonth()
+        {
+            return View();
+        }
+        public ActionResult OneYear()
+        {
+            return View();
+        }
     }
 }
