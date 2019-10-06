@@ -185,6 +185,7 @@
     <Compile Include="Controllers\CalculatorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\QuitplanController.cs" />
     <Compile Include="Controllers\QuittingSupportController.cs" />
     <Compile Include="Controllers\SurveyController.cs" />
     <Compile Include="Global.asax.cs">
@@ -299,6 +300,7 @@
     <Content Include="img\OtherOptions-image.jpg" />
     <Content Include="img\post-bg.jpg" />
     <Content Include="img\post-sample-image.jpg" />
+    <Content Include="img\quitplan.jpg" />
     <Content Include="img\QuittingSupport-Medications-image.jpg" />
     <Content Include="img\QuittingSupport-NicotineReplacements-image.jpg" />
     <Content Include="img\QuittingSupport-OtherOptions-image.jpg" />
@@ -353,6 +355,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Survey1.js" />
+    <Content Include="Scripts\Survey2.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -472,6 +476,7 @@
     <Content Include="Views\Survey\Indulgence2.cshtml" />
     <Content Include="Views\Survey\SensorimotorStimulation2.cshtml" />
     <Content Include="Views\Survey\SocialSmoking2.cshtml" />
+    <Content Include="Views\Quitplan\Quitplan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
