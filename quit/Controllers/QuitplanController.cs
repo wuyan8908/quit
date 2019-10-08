@@ -25,9 +25,5 @@ namespace quit.Controllers
         {
             return View();
         }
-        public ActionResult OneYear()
-        {
-            return View();
-        }
     }
 }

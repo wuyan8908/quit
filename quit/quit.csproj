@@ -477,7 +477,6 @@
     <Content Include="Views\Survey\SensorimotorStimulation2.cshtml" />
     <Content Include="Views\Survey\SocialSmoking2.cshtml" />
     <Content Include="Views\Quitplan\Quitplan.cshtml" />
-    <Content Include="Views\Quitplan\OneYear.cshtml" />
     <Content Include="Views\Quitplan\ColdTurkey.cshtml" />
     <Content Include="Views\Quitplan\ThreeMonth.cshtml" />
     <Content Include="Views\Quitplan\SixMonth.cshtml" />
