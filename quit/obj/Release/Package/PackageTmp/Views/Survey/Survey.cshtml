@@ -21,55 +21,8 @@
     <!-- Custom styles for this template -->
     <link href="~/css/quitpath.css" rel="stylesheet">
     <link href="~/css/Survey.css" rel="stylesheet">
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button1").click(function () {
-                var answer = [
-                    $("input[name='question1']:checked").val(),
-                    $("input[name='question2']:checked").val(),
-                    $("input[name='question3']:checked").val()
-                ];
-                for (var i = 0; i < answer.length; i++) {
-                    if (answer[i] == null) {
-                        alert("Please finish all the questions first");
-                        return;
-                    }
-                }
+    <script src="~/Scripts/Survey1.js"></script>
 
-                var result = [0, 0, 0, 0, 0, 0];
-                var score = [0, 0, 0, 0, 0, 0];
-
-                for (var i = 0; i < answer.length; i++) {
-                    switch (answer[i]) {
-                        case 'A': ++result[0]; ++score[0]; break;
-                        case 'B': ++result[1]; ++score[1]; break;
-                        case 'C': ++result[2]; ++score[2]; break;
-                        case 'D': ++result[3]; ++score[3]; break;
-                        case 'E': ++result[4]; ++score[4]; break;
-                        case 'F': ++result[5]; ++score[5]; break;
-                    }
-                }
-                score.sort();
-                var index = 0;
-                for (var i = 0; i < result.length; i++) {
-                    if (result[i] == score[5]) {
-                        index = i;
-                        break;
-                    }
-                }
-                switch (index) {
-                    case 0: window.location.href = "../Survey/CalmNegativeEmotions"; break;
-                    case 1: window.location.href = "../Survey/SocialSmoking"; break;
-                    case 2: window.location.href = "../Survey/Indulgence"; break;
-                    case 3: window.location.href = "../Survey/Addiction"; break;
-                    case 4: window.location.href = "../Survey/SensorimotorStimulation"; break;
-                    case 5: window.location.href = "../Survey/Habit";break;
-                }
-
-            });
-        });
-
-    </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $(".button2").click(function () {
@@ -100,49 +53,52 @@
                     <li class="nav-item">
                         <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/QuitPlan/QuitPlan">Quitting Plan</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
                         <div class="nav-link dropdown-content">
                             <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
                             <a href="~/QuittingSupport/Medications">Medications</a>
-                            <a href="~/QuittingSupport/SupportFromProfessionals">Support from Professionals</a>
+                            <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
                             <a href="~/QuittingSupport/OtherOptions">Other Options</a>
-                            <a href="~/QuittingSupport/QuittingSupportOptions">Quitting Support Options</a>
+                            <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
                         </div>
                     </li>
                     @*<li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-        </li>*@
+                            <a class="nav-link" href="post.html">Sample Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>*@
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="        background-image: url('../../img/QuittingSupport-SupportFromProfessionals-image.jpg');
+    <header class="masthead" style="        background-image: url('../../img/concept_bg.jpg');
 ">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1>What’s Driving Your Smoking?</h1>
+                        <h1>What's Driving Your Smoking?</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
-        <h6><a href="~/Home/Index">Home</a> &gt; Survey</h6>
+        <span><a href="~/Home/Index">Home</a> &gt; <b>Survey</b></span>
     </div>
     <!-- Main Content -->
     <div align="center" style="margin-bottom: 15px">
-        <input type="button" class="blue button button2" name="Smoker" value="Smoker"  style="background-color: hsl(148, 79%, 67%)">
-        <input type="button" class="blue button button3" name="Partner" value="Partner" href="../Survey/Survey2">
-
+        <p><b>Choose your identity</b></p>
+        <input type="button" class="gray button button2" name="Smoker" value="Smoker" style="background-color: hsl(0, 0%, 50%)">
+        <input type="button" class="blue button button3" name="Partner" value="Partner of Smoker" href="../Survey/Survey2">
     </div>
     <div class="card" style="background-color:#e4eaf2">
         <form name="form1" method="post" action="" onsubmit="return form_check();">
@@ -168,42 +124,42 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a1"><input name="question1" type="radio" value="A" id="1a1">A. I smoke when I feel stressed</label>
+                            <label class="gray button" for="11"><input name="question1" type="checkbox" value="A" id="11"> A. I smoke when I feel stressed</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a2"><input name="question1" type="radio" value="B" id="1a2">B. I smoke when I am with friends</label>
+                            <label class="gray button" for="12"><input name="question1" type="checkbox" value="B" id="12"> B. I smoke when I am with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a3"><input type="radio" name="question1" value="F" id="1a3">C. I smoke when I need an energy boost</label>
+                            <label class="gray button" for="13"><input type="checkbox" name="question1" value="F" id="13"> C. I smoke at the same set times each day</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a4"><input type="radio" name="question1" value="D" id="1a4">D. I smoke when I feel a craving</label>
+                            <label class="gray button" for="14"><input type="checkbox" name="question1" value="D" id="14"> D. I smoke when I feel a craving</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a5"><input type="radio" name="question1" value="C" id="1a5">E. I smoke when I feel sad or worried</label>
+                            <label class="gray button" for="15"><input type="checkbox" name="question1" value="C" id="15"> E. I smoke when I want to reward myself</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="1a6"><input type="radio" name="question1" value="E" id="1a6">F. I smoke when I am bored</label>
+                            <label class="gray button" for="16"><input type="checkbox" name="question1" value="E" id="16"> F. I smoke when I am bored</label>
                         </td>
                     </tr>
 
@@ -219,42 +175,42 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a1"><input name="question2" type="radio" value="C" id="2a1">A. Smoking is a treat</label>
+                            <label class="gray button" for="21"><input name="question2" type="checkbox" value="F" id="21"> A. Smoking is a habit I don't think about</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a2"><input name="question2" type="radio" value="A" id="2a2">B. Smoking makes me feel better</label>
+                            <label class="gray button" for="22"><input name="question2" type="checkbox" value="A" id="22"> B. Smoking makes me feel better</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a3"><input type="radio" name="question2" value="F" id="2a3">C. Smoking is a habit I don’t think about</label>
+                            <label class="gray button" for="23"><input type="checkbox" name="question2" value="C" id="23"> C. Smoking is a treat</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a4"><input type="radio" name="question2" value="B" id="2a4">D. Smoking is part of going out with friends</label>
+                            <label class="gray button" for="24"><input type="checkbox" name="question2" value="B" id="24"> D. Smoking is part of going out with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a5"><input type="radio" name="question2" value="D" id="2a5">E. Smoking is something I can’t stop doing</label>
+                            <label class="gray button" for="25"><input type="checkbox" name="question2" value="E" id="25"> E. Smoking keeps my hands busy</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="2a6"><input type="radio" name="question2" value="E" id="2a6">F. Smoking keeps my hands busy</label>
+                            <label class="gray button" for="26"><input type="checkbox" name="question2" value="D" id="26"> F. Smoking is something I can't stop doing</label>
                         </td>
                     </tr>
 
@@ -270,124 +226,51 @@
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a1"><input name="question3" type="radio" value="A" id="3a1">A. When I am stressed</label>
+                            <label class="gray button" for="31"><input name="question3" type="checkbox" value="B" id="31"> A. When I am with friends</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a2"><input name="question3" type="radio" value="C" id="3a2">B. When I need a boost</label>
+                            <label class="gray button" for="32"><input name="question3" type="checkbox" value="C" id="32"> B. When I need a boost</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a3"><input type="radio" name="question3" value="D" id="3a3">C. When I haven’t smoked for a while</label>
+                            <label class="gray button" for="33"><input type="checkbox" name="question3" value="D" id="33"> C. When I haven't smoked for a while</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a4"><input type="radio" name="question3" value="B" id="3a4">D. When I am with friends</label>
+                            <label class="gray button" for="34"><input type="checkbox" name="question3" value="A" id="34"> D. When I am stressed</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a5"><input type="radio" name="question3" value="E" id="3a5">E. When I need something to do with my hands</label>
+                            <label class="gray button" for="35"><input type="checkbox" name="question3" value="E" id="35"> E. When I need something to do with my hands</label>
                         </td>
                     </tr>
                     <tr>
                         <td height="20" valign="top" class="STYLE22">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="3a6"><input type="radio" name="question3" value="F" id="3a6">F. When it’s time for a smoking break</label>
+                            <label class="gray button" for="36"><input type="checkbox" name="question3" value="F" id="36"> F. When it's time for a smoking break</label>
                         </td>
                     </tr>
-                    @*
-                        <tr>
-                            <td height="24" class="STYLE22">
-                                <a name="the4ti"></a><br><br>
 
-                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 4</b><br><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="4a1"><input name="the4ti" type="radio" value="A" id="4a1">A. </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="4a2"><input name="the4ti" type="radio" value="B" id="4a2">B.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="4a3"><input type="radio" name="the4ti" value="C" id="4a3">C.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="4a4"><input type="radio" name="the4ti" value="D" id="4a4">D.</label>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td height="24" class="STYLE22">
-                                <a name="the5tijuanbiao"></a><br><br>
-
-                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 5</b><br><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="5a1"><input name="the5ti" type="radio" value="A" id="5a1">A. </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="5a2"><input name="the5ti" type="radio" value="B" id="5a2">B.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="5a3"><input type="radio" name="the5ti" value="D" id="5a3">C.</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="20" valign="top" class="STYLE22">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                <label class="gray button" for="5a4"><input type="radio" name="the5ti" value="C" id="5a4">D.</label>
-                            </td>
-                        </tr>
-                    *@
 
                     <tr>
                         <td align="center" height="50" class="STYLE22">
                             <p>
                                 <br><br>
-                                    <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
+                                <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
                             </p>
                             <p>&nbsp;</p>
                         </td>
@@ -396,43 +279,121 @@
             </table>
         </form>
     </div>
+    <br><br>
     <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer class="foot1">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
             <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
+
+                <!-- Grid column -->
+                <div class="col-md-2 mt-md-0 mt-4">
+
+                    <!-- Content -->
+                    <br>
+                    <h4 class="text-uppercase">Quit Pathway</h4>
+                    <h6>Quit Smoking Have a Better Life</h6>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-4">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <br><br>
+                    <h5 class="text-uppercase">FINANCE</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="~/Calculator/Calculator" style="font-size:smaller; color:white">Spending Calculator</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Quit Pathway 2019</p>
                 </div>
-            </div>
-        </div>
-    </footer>
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-4">
 
+                    <!-- Links -->
+                    <br><br>
+                    <h5 class="text-uppercase">Survey</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="~/Survey/Survey" style="font-size:smaller; color:white">Survey</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <br><br>
+                    <h5 class="text-uppercase">Why Quit</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="~/Benefit/BenefitsOfQuitting" style="font-size:smaller; color:white">Benefits of Quitting</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <br><br>
+                    <h5 class="text-uppercase">Quitting Plan</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="~/QuitPlan/QuitPlan" style="font-size:smaller; color:white">Quitting Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <br><br>
+                    <h5 class="text-uppercase">QUITTING SUPPORT</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="~/QuittingSupport/NicotineReplacements" style="font-size:smaller; color:white">Nicotine Replacements</a>
+                        </li>
+                        <li>
+                            <a href="~/QuittingSupport/Medications" style="font-size:smaller; color:white">Medications</a>
+                        </li>
+                        <li>
+                            <a href="~/QuittingSupport/SupportFromProfessionals" style="font-size:smaller; color:white">Professional Support</a>
+                        </li>
+                        <li>
+                            <a href="~/QuittingSupport/OtherOptions" style="font-size:smaller; color:white">Other Options</a>
+                        </li>
+                        <li>
+                            <a href="~/QuittingSupport/QuittingSupportOptions" style="font-size:smaller; color:white">Smoking Interventions</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-4">
+            © 2019 Copyright:
+            <a style=" color:white "> www.quitpathway.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
     <!-- Bootstrap core JavaScript -->
     <script src="~/vendor/jquery/jquery.js"></script>
     <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
@@ -446,15 +407,27 @@
 
 
 <style>
-    .card {
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-         padding: 16px;
-         background-color: #f1f1f1;
-         width:50%;
-         margin-left:25%;
-         margin-right:25%;
-
+    .foot1 {
+        background-color: #3c404d;
+        color: snow;
+        margin: 0;
+        padding: 0;
     }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        background-color: #f1f1f1;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
     header.masthead .site-heading {
         padding: 165px 0;
     }
