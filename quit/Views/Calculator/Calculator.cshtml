@@ -25,276 +25,280 @@
 </head>
 
 <body>
+    <div class="backimg">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Home/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Survey/Survey">Survey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/QuitPlan/QuitPlan">Quitting Plan</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
-                        <div class="nav-link dropdown-content">
-                            <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
-                            <a href="~/QuittingSupport/Medications">Medications</a>
-                            <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
-                            <a href="~/QuittingSupport/OtherOptions">Other Options</a>
-                            <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Survey/Survey">Survey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/QuitPlan/QuitPlan">Quitting Plan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
+                            <div class="nav-link dropdown-content">
+                                <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
+                                <a href="~/QuittingSupport/Medications">Medications</a>
+                                <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
+                                <a href="~/QuittingSupport/OtherOptions">Other Options</a>
+                                <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Page Header -->
-    <header class="masthead" style=" background-image: url('../../img/coins_bg.jpg');
+        <!-- Page Header -->
+        <header class="masthead" style=" background-image: url('../../img/coins_bg.jpg');
 ">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1>Spending Calculator</h1>
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h1>Spending Calculator</h1>
+                        </div>
                     </div>
                 </div>
             </div>
+        </header>
+        <div class="clearfix" style="margin-left: 130px">
+            <span><a href="~/Home/Index">Home</a> &gt; <b>Spending Calculator</b></span>
         </div>
-    </header>
-    <div class="clearfix" style="margin-left: 130px">
-        <span><a href="~/Home/Index">Home</a> &gt; <b>Spending Calculator</b></span>
-    </div>
-    <div class="container">
-
-        <div class="calculator">
-            <style>
 
 
-                #fbuilder .fform h2 {
-                    color: #000;
-                    font-size: 28px;
-                    font-weight: bold;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
 
-                #fbuilder, #fbuilder label,
-                #fbuilder span {
-                    font-size: 22px;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
 
-                    #fbuilder input[type=number],
+        <div class="container">
+
+            <div class="calculator">
+                <style>
+
+
+                    #fbuilder .fform h2 {
+                        color: #000;
+                        font-size: 28px;
+                        font-weight: bold;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+                    #fbuilder, #fbuilder label,
+                    #fbuilder span {
+                        font-size: 22px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+                        #fbuilder input[type=number],
+                        #fbuilder textarea,
+                        #fbuilder select {
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        }
+
+                    .cp_cff_pastel #fbuilder .fields.section_breaks {
+                        border: 0;
+                        border-radius: 4px;
+                        background: #d2d9dd;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        max-height: 5px;
+                    }
+
+                    .cp_cff_pastel #fbuilder input[type=text],
                     #fbuilder textarea,
                     #fbuilder select {
                         font-size: 20px;
                         font-weight: bold;
                         font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     }
-
-                .cp_cff_pastel #fbuilder .fields.section_breaks {
-                    border: 0;
-                    border-radius: 4px;
-                    background: #d2d9dd;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    max-height: 5px;
-                }
-
-                .cp_cff_pastel #fbuilder input[type=text],
-                #fbuilder textarea,
-                #fbuilder select {
-                    font-size: 20px;
-                    font-weight: bold;
-                    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                }
-            </style>
-            <form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
-                <input type="hidden" name="cp_calculatedfieldsf_id" value="6" />
-                <pre style="display:none;"><!--noptimize-->
-                <script src="~/Scripts/Calculator.js"></script>
+                </style>
+                <form name="cp_calculatedfieldsf_pform_1" id="cp_calculatedfieldsf_pform_1" action="?" method="post" enctype="multipart/form-data" class="">
+                    <input type="hidden" name="cp_calculatedfieldsf_id" value="6" />
+                    <pre style="display:none;"><!--noptimize-->
+                    <script src="~/Scripts/Calculator.js"></script>
     <!--/noptimize--></pre>
-                <div id="fbuilder">
-                    <div id="fbuilder_1">
-                        <div id="formheader_1"></div>
-                        <div id="fieldlist_1"></div>
+                    <div id="fbuilder">
+                        <div id="fbuilder_1">
+                            <div id="formheader_1"></div>
+                            <div id="fieldlist_1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="clearer"></div>
-            </form>
-            <link rel='stylesheet' id='cpcff_stylepublic-css' href="~/css/calcultor/stylepublic.css" type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_jquery_ui-css' href="~/css/calcultor/jquery-ui-1.8.20.custom.css" type='text/css' media='all' property="stylesheet" />
-            <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href="~/css/calcultor/style.css" type='text/css' media='all' property="stylesheet" />
-            @Scripts.Render("~/bundles/calculator")
-            <link href="~/css/calcultor/stylepublic.css" rel="stylesheet" />
-            <script type='text/javascript'>
-                /* <![CDATA[ */
-                var cp_calculatedfieldsf_fbuilder_config_1 = { "obj": "{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}" };
-                /* ]]> */
-            </script>
-            <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/cache/all.js?ver=1.0.323'></script>
+                    <div class="clearer"></div>
+                </form>
+                <link rel='stylesheet' id='cpcff_stylepublic-css' href="~/css/calcultor/stylepublic.css" type='text/css' media='all' property="stylesheet" />
+                <link rel='stylesheet' id='cpcff_jquery_ui-css' href="~/css/calcultor/jquery-ui-1.8.20.custom.css" type='text/css' media='all' property="stylesheet" />
+                <link rel='stylesheet' id='cpcff_template_csscp_cff_pastel-css' href="~/css/calcultor/style.css" type='text/css' media='all' property="stylesheet" />
+                @Scripts.Render("~/bundles/calculator")
+                <link href="~/css/calcultor/stylepublic.css" rel="stylesheet" />
+                <script type='text/javascript'>
+                    /* <![CDATA[ */
+                    var cp_calculatedfieldsf_fbuilder_config_1 = { "obj": "{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}" };
+                    /* ]]> */
+                </script>
+                <script type='text/javascript' src='https://www.quitpathway1.tk/wp-content/plugins/calculated-fields-form/js/cache/all.js?ver=1.0.323'></script>
 
 
 
-            <script type='text/javascript'>var divElement = document.getElementById('viz1568544432682'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                <script type='text/javascript'>var divElement = document.getElementById('viz1568544432682'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <div align="center" style="margin: 15px 0 15px 0">
-            <h6 style="font-size: 24px">
-                Real time prediction of savings
-            </h6>
+        <div class="card">
+            <div align="center" style="margin: 15px 0 15px 0">
+                <h6 style="font-size: 24px">
+                    Real time prediction of savings
+                </h6>
+            </div>
+            <iframe src="https://simeonthomas2.shinyapps.io/Visualizations/" height="685">
+            </iframe>
         </div>
-        <iframe src="https://simeonthomas2.shinyapps.io/Visualizations/" height="685">
-        </iframe>
-    </div>
-    @*<div class="clearfix" style="margin-right: 230px">
+        @*<div class="clearfix" style="margin-right: 230px">
             <a class="buttonCa float-right "style="font-size: 18px;width: 210px;" href="~/Calculator/Calculator">
             <span>Future Spending?</span></a>
         </div>*@
-    <hr>
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="clearfix">
-            <a class="btn btn-primary float-right" href="~/Survey/Survey">Why You Smoking</a>
+        <hr>
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="clearfix">
+                <a class="btn btn-primary float-right" href="~/Survey/Survey">Why You Smoking</a>
+            </div>
         </div>
-    </div>
-    <hr>
+        <hr>
 
-    <!-- Footer -->
-    <footer class="foot1">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+        <!-- Footer -->
+        <footer class="foot1">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
 
-            <!-- Grid row -->
-            <div class="row">
+                <!-- Grid row -->
+                <div class="row">
 
-                <!-- Grid column -->
-                <div class="col-md-2 mt-md-0 mt-4">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mt-md-0 mt-4">
 
-                    <!-- Content -->
-                    <br>
-                    <h4 class="text-uppercase">Quit Pathway</h4>
-                    <h6>Quit Smoking Have a Better Life</h6>
+                        <!-- Content -->
+                        <br>
+                        <h4 class="text-uppercase">Quit Pathway</h4>
+                        <h6>Quit Smoking Have a Better Life</h6>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-4">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">FINANCE</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Calculator/Calculator" style="font-size:smaller; color:white">Spending Calculator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Survey</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Survey/Survey" style="font-size:smaller; color:white">Survey</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Why Quit</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Benefit/BenefitsOfQuitting" style="font-size:smaller; color:white">Benefits of Quitting</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Quitting Plan</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/QuitPlan/QuitPlan" style="font-size:smaller; color:white">Quitting Plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">QUITTING SUPPORT</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/QuittingSupport/NicotineReplacements" style="font-size:smaller; color:white">Nicotine Replacements</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/Medications" style="font-size:smaller; color:white">Medications</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/SupportFromProfessionals" style="font-size:smaller; color:white">Professional Support</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/OtherOptions" style="font-size:smaller; color:white">Other Options</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/QuittingSupportOptions" style="font-size:smaller; color:white">Smoking Interventions</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
 
                 </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-4">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">FINANCE</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Calculator/Calculator" style="font-size:smaller; color:white">Spending Calculator</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Survey</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Survey/Survey" style="font-size:smaller; color:white">Survey</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Why Quit</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Benefit/BenefitsOfQuitting" style="font-size:smaller; color:white">Benefits of Quitting</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Quitting Plan</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/QuitPlan/QuitPlan" style="font-size:smaller; color:white">Quitting Plan</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">QUITTING SUPPORT</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/QuittingSupport/NicotineReplacements" style="font-size:smaller; color:white">Nicotine Replacements</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/Medications" style="font-size:smaller; color:white">Medications</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/SupportFromProfessionals" style="font-size:smaller; color:white">Professional Support</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/OtherOptions" style="font-size:smaller; color:white">Other Options</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/QuittingSupportOptions" style="font-size:smaller; color:white">Smoking Interventions</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
+                <!-- Grid row -->
 
             </div>
-            <!-- Grid row -->
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-4">
+                © 2019 Copyright:
+                <a style=" color:white "> www.quitpathway.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="~/vendor/jquery/jquery.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
-        </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-4">
-            © 2019 Copyright:
-            <a style=" color:white "> www.quitpathway.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="~/vendor/jquery/jquery.js"></script>
-    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="~/js/clean-blog.js"></script>
-
+        <!-- Custom scripts for this template -->
+        <script src="~/js/clean-blog.js"></script>
+    </div>
 </body>
 
 </html>
