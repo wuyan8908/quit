@@ -44,74 +44,77 @@
 </head>
 
 <body>
+    <div class="backimg">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Calculator/Calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Survey/Survey">Survey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/QuitPlan/QuitPlan" style="color: #c9c9c9">Quitting Plan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
+                            <div class="nav-link dropdown-content">
+                                <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
+                                <a href="~/QuittingSupport/Medications">Medications</a>
+                                <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
+                                <a href="~/QuittingSupport/OtherOptions">Other Options</a>
+                                <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
+                            </div>
+                        </li>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Home/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Survey/Survey">Survey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/QuitPlan/QuitPlan" style="color: #c9c9c9">Quitting Plan</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
-                        <div class="nav-link dropdown-content">
-                            <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
-                            <a href="~/QuittingSupport/Medications">Medications</a>
-                            <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
-                            <a href="~/QuittingSupport/OtherOptions">Other Options</a>
-                            <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
-                        </div>
-                    </li>
-                    
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('../../img/quitplan.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1>Quitting Plan</h1>
+        <!-- Page Header -->
+        <header class="masthead" style="background-image: url('../../img/quitplan.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h1>Quitting Plan</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
+            <span><a href="~/Home/Index">Home</a> &gt; <b>Quitting Plan</b></span>
+        </div>
+        <!-- Main Content -->
+        <div class="column">
+            <script src="//my.visme.co/visme.js"></script>
+            <div class="visme_d" data-url="010x9my3-preparing-to-quit" data-w="800" data-h="600" data-domain="my"></div><br>
+            <div class="container" style="margin-left:25%">
+                <div class="dropdown2">
+                    <H2>How long do you want to quit smoking?</H2>
+                    <button onclick="myFunction()" class="btn btn-primary dropbtn2 ">Choose Your Plan</button>
+                    <div id="myDropdown" class="dropdown-content2">
+                        <a href="~/Quitplan/ColdTurkey">Cold Turkey</a>
+                        <a href="~/Quitplan/ThreeMonth">3 Months</a>
+                        <a href="~/Quitplan/SixMonth">6 Months</a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
-        <span><a href="~/Home/Index">Home</a> &gt; <b>Quitting Plan</b></span>
-    </div>
-    <!-- Main Content -->
-    <div class="column">
-        <script src="//my.visme.co/visme.js"></script>
-        <div class="visme_d" data-url="010x9my3-preparing-to-quit" data-w="800" data-h="600" data-domain="my"></div><br>
-        <div class="container" style="margin-left:25%">
-            <div class="dropdown2">
-                <H2>How long do you want to quit smoking?</H2>
-                <button onclick="myFunction()" class="dropbtn2">Choose Your Plan</button>
-                <div id="myDropdown" class="dropdown-content2">
-                    <a href="~/Quitplan/ColdTurkey">Cold Turkey</a>
-                    <a href="~/Quitplan/ThreeMonth">3 Months</a>
-                    <a href="~/Quitplan/SixMonth">6 Months</a>
-                </div>
-            </div>
-        </div>
-    </div>
         <br><br>
         <!-- Footer -->
         <footer class="foot1">
@@ -221,8 +224,7 @@
             <!-- Footer Links -->
             <!-- Copyright -->
             <div class="footer-copyright text-center py-4">
-                © 2019 Copyright:
-                <a style=" color:white "> www.quitpathway.com</a>
+                <p style="font-size:10px">© 2019 Copyright:<a style=" color:white "> www.quitpathway.com</a></p>
             </div>
             <!-- Copyright -->
         </footer>
@@ -233,7 +235,7 @@
 
         <!-- Custom scripts for this template -->
         <script src="~/js/clean-blog.js"></script>
-
+    </div>
 </body>
 
 </html>
@@ -253,17 +255,14 @@
     }
 
     .dropbtn2 {
-        background-color: #3498DB;
         color: white;
         padding: 16px;
-        font-size: 16px;
+        font-size: 22px;
+        margin: 10px;
         border: none;
         cursor: pointer;
     }
 
-        .dropbtn2:hover, .dropbtn2:focus {
-            background-color: #2980B9;
-        }
 
     .dropdown2 {
         position: relative;

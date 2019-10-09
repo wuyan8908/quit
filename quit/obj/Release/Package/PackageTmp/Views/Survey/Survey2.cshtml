@@ -36,422 +36,424 @@
 </head>
 
 <body>
+    <div class="backimg">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="~/Home/Index">Quit Pathway</a>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Home/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Survey/Survey" style="color: #c9c9c9">Survey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/QuitPlan/QuitPlan">Quitting Plan</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
-                        <div class="nav-link dropdown-content">
-                            <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
-                            <a href="~/QuittingSupport/Medications">Medications</a>
-                            <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
-                            <a href="~/QuittingSupport/OtherOptions">Other Options</a>
-                            <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
-                        </div>
-                    </li>
-                    @*<li class="nav-item">
-                            <a class="nav-link" href="post.html">Sample Post</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>*@
-                </ul>
+                            <a class="nav-link" href="~/Calculator/Calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Survey/Survey" style="color: #c9c9c9">Survey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Benefit/BenefitsOfQuitting">Why Quit?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/QuitPlan/QuitPlan">Quitting Plan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="~/QuittingSupport/QuittingSupport">Quitting Support</a>
+                            <div class="nav-link dropdown-content">
+                                <a href="~/QuittingSupport/NicotineReplacements">Nicotine Replacements</a>
+                                <a href="~/QuittingSupport/Medications">Medications</a>
+                                <a href="~/QuittingSupport/SupportFromProfessionals">Professional Support</a>
+                                <a href="~/QuittingSupport/OtherOptions">Other Options</a>
+                                <a href="~/QuittingSupport/QuittingSupportOptions">Smoking Interventions</a>
+                            </div>
+                        </li>
+                        @*<li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>*@
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Page Header -->
-    <header class="masthead" style="        background-image: url('../../img/thinkingw_bg.jpg');
+        <!-- Page Header -->
+        <header class="masthead" style="        background-image: url('../../img/thinkingw_bg.jpg');
 ">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1>What Are Your Partner's Motivations For Smoking?</h1>
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h1>What Are Your Partner's Motivations For Smoking?</h1>
+                        </div>
                     </div>
                 </div>
             </div>
+        </header>
+        <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
+            <span><a href="~/Home/Index">Home</a> &gt; <b>Survey</b></span>
         </div>
-    </header>
-    <div class="clearfix" style="margin-left: 130px ; margin-bottom: 30px">
-        <span><a href="~/Home/Index">Home</a> &gt; <b>Survey</b></span>
-    </div>
-    <!-- Main Content -->
-    <div align="center" style="margin-bottom: 15px">
-        <p><b>Choose your identity</b></p>
-        <input type="button" class="blue button button2 " name="Smoker" value="Smoker" href="../Survey/Survey">
-        <input type="button" class="gray button button3 " name="Partner" value="Partner of Smoker" style="background-color: hsl(0, 0%, 50%)">
+        <!-- Main Content -->
+        <div align="center" style="margin-bottom: 15px">
+            <p><b>Choose your identity</b></p>
+            <input type="button" class="blue button button2 " name="Smoker" value="Smoker" href="../Survey/Survey">
+            <input type="button" class="gray button button3 " name="Partner" value="Partner of Smoker" style="background-color: hsl(0, 0%, 50%)">
 
-    </div>
-    <div class="card" style="background-color:#e4eaf2">
-        <form name="form1" method="post" action="" onsubmit="return form_check();">
+        </div>
+        <div class="card" style="background-color:#e4eaf2">
+            <form name="form1" method="post" action="" onsubmit="return form_check();">
 
-            <table width="100%" border="0" class="9p">
-                <!--DWLayoutTable-->
+                <table width="100%" border="0" class="9p">
+                    <!--DWLayoutTable-->
 
 
-                <tbody>
-                    <tr>
+                    <tbody>
+                        <tr>
 
-                        <td height="24" class="STYLE22">
-                            <a name="question1table"></a><br><br>
+                            <td height="24" class="STYLE22">
+                                <a name="question1table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 1.</b>
-                            <br>
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner say they feel a craving to smoke?</b>
-                            <br>
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 1.</b>
+                                <br>
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner say they feel a craving to smoke?</b>
+                                <br>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="11"><input name="question1" type="checkbox" value="A" id="11"> A. When they’re stressed.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="11"><input name="question1" type="checkbox" value="A" id="11"> A. When they’re stressed.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="12"><input name="question1" type="checkbox" value="E" id="12"> B. When they need a boost.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="12"><input name="question1" type="checkbox" value="E" id="12"> B. When they need a boost.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="13"><input type="checkbox" name="question1" value="D" id="13"> C. When they haven’t smoked for a while.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="13"><input type="checkbox" name="question1" value="D" id="13"> C. When they haven’t smoked for a while.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="14"><input type="checkbox" name="question1" value="B" id="14"> D. When they’re with friends.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="14"><input type="checkbox" name="question1" value="B" id="14"> D. When they’re with friends.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="15"><input type="checkbox" name="question1" value="C" id="15"> E. When they need something to do with their hands.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="15"><input type="checkbox" name="question1" value="C" id="15"> E. When they need something to do with their hands.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="16"><input type="checkbox" name="question1" value="F" id="16"> F. When it’s their usual time for a smoking break.</label>
-                        </td>
-                    </tr>
+                                <label class="gray button" for="16"><input type="checkbox" name="question1" value="F" id="16"> F. When it’s their usual time for a smoking break.</label>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td height="24" class="STYLE22">
-                            <a name="question2table"></a><br><br>
+                        <tr>
+                            <td height="24" class="STYLE22">
+                                <a name="question2table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 2. </b><br>
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner usually respond to the cravings?</b><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 2. </b><br>
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>When does your partner usually respond to the cravings?</b><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="21"><input name="question2" type="checkbox" value="A" id="21"> A. They smoke when they’re stressed.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="21"><input name="question2" type="checkbox" value="A" id="21"> A. They smoke when they’re stressed.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="22"><input name="question2" type="checkbox" value="B" id="22"> B. They smoke when they’re out with friends.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="22"><input name="question2" type="checkbox" value="B" id="22"> B. They smoke when they’re out with friends.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="23"><input type="checkbox" name="question2" value="F" id="23"> C. They smoke at the same set times each day.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="23"><input type="checkbox" name="question2" value="F" id="23"> C. They smoke at the same set times each day.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="24"><input type="checkbox" name="question2" value="D" id="24"> D. They smoke whenever they feel a craving.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="24"><input type="checkbox" name="question2" value="D" id="24"> D. They smoke whenever they feel a craving.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="25"><input type="checkbox" name="question2" value="C" id="25"> E. They smoke when they want a reward.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="25"><input type="checkbox" name="question2" value="C" id="25"> E. They smoke when they want a reward.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="26"><input type="checkbox" name="question2" value="E" id="26"> F. They smoke when they’re bored.</label>
-                        </td>
-                    </tr>
+                                <label class="gray button" for="26"><input type="checkbox" name="question2" value="E" id="26"> F. They smoke when they’re bored.</label>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td height="24" class="STYLE22">
-                            <a name="question3table"></a><br><br>
+                        <tr>
+                            <td height="24" class="STYLE22">
+                                <a name="question3table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 3. </b><br>
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Why does your partner say they smoke?</b><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 3. </b><br>
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Why does your partner say they smoke?</b><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="31"><input name="question3" type="checkbox" value="C" id="31"> A. Smoking is a treat.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="31"><input name="question3" type="checkbox" value="C" id="31"> A. Smoking is a treat.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="32"><input name="question3" type="checkbox" value="A" id="32"> B. Smoking makes them feel better.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="32"><input name="question3" type="checkbox" value="A" id="32"> B. Smoking makes them feel better.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="33"><input type="checkbox" name="question3" value="F" id="33"> C. Smoking is a habit they don’t think about.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="33"><input type="checkbox" name="question3" value="F" id="33"> C. Smoking is a habit they don’t think about.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="34"><input type="checkbox" name="question3" value="B" id="34"> D. Smoking is part of going out with friends.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="34"><input type="checkbox" name="question3" value="B" id="34"> D. Smoking is part of going out with friends.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="35"><input type="checkbox" name="question3" value="D" id="35"> E. Smoking is something they can’t stop doing.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="35"><input type="checkbox" name="question3" value="D" id="35"> E. Smoking is something they can’t stop doing.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="36"><input type="checkbox" name="question3" value="E" id="36"> F. Smoking is something they do to keep their hands busy.</label>
-                        </td>
-                    </tr>
+                                <label class="gray button" for="36"><input type="checkbox" name="question3" value="E" id="36"> F. Smoking is something they do to keep their hands busy.</label>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td height="24" class="STYLE22">
-                            <a name="question3table"></a><br><br>
+                        <tr>
+                            <td height="24" class="STYLE22">
+                                <a name="question3table"></a><br><br>
 
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 4. </b><br>
-                            <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Why do you think your partner smokes?</b><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Question 4. </b><br>
+                                <span class="STYLE36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Why do you think your partner smokes?</b><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="41"><input name="question4" type="checkbox" value="C" id="41"> A. Smoking is a treat.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="41"><input name="question4" type="checkbox" value="C" id="41"> A. Smoking is a treat.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="42"><input name="question4" type="checkbox" value="A" id="42"> B. Smoking makes them feel better.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="42"><input name="question4" type="checkbox" value="A" id="42"> B. Smoking makes them feel better.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="43"><input type="checkbox" name="question4" value="F" id="43"> C. Smoking is a habit they don’t think about.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="43"><input type="checkbox" name="question4" value="F" id="43"> C. Smoking is a habit they don’t think about.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="44"><input type="checkbox" name="question4" value="B" id="44"> D. Smoking is part of going out with friends.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="44"><input type="checkbox" name="question4" value="B" id="44"> D. Smoking is part of going out with friends.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="45"><input type="checkbox" name="question4" value="D" id="45"> E. Smoking is something they can’t stop doing.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="20" valign="top" class="STYLE22">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="gray button" for="45"><input type="checkbox" name="question4" value="D" id="45"> E. Smoking is something they can’t stop doing.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" valign="top" class="STYLE22">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            <label class="gray button" for="46"><input type="checkbox" name="question4" value="E" id="46"> F. Smoking is something they do to keep their hands busy.</label>
-                        </td>
-                    </tr>
+                                <label class="gray button" for="46"><input type="checkbox" name="question4" value="E" id="46"> F. Smoking is something they do to keep their hands busy.</label>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td align="center" height="50" class="STYLE22">
-                            <p>
-                                <br><br>
-                                <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
-                            </p>
-                            <p>&nbsp;</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>
-    <br><br>
-    <!-- Footer -->
-    <footer class="foot1">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+                        <tr>
+                            <td align="center" height="50" class="STYLE22">
+                                <p>
+                                    <br><br>
+                                    <input type="button" class="blue button button1" name="Submit" value="  Submit　" id="subquiz">
+                                </p>
+                                <p>&nbsp;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <br><br>
+        <!-- Footer -->
+        <footer class="foot1">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
 
-            <!-- Grid row -->
-            <div class="row">
+                <!-- Grid row -->
+                <div class="row">
 
-                <!-- Grid column -->
-                <div class="col-md-2 mt-md-0 mt-4">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mt-md-0 mt-4">
 
-                    <!-- Content -->
-                    <br>
-                    <h4 class="text-uppercase">Quit Pathway</h4>
-                    <h6>Quit Smoking Have a Better Life</h6>
+                        <!-- Content -->
+                        <br>
+                        <h4 class="text-uppercase">Quit Pathway</h4>
+                        <h6>Quit Smoking Have a Better Life</h6>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-4">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">FINANCE</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Calculator/Calculator" style="font-size:smaller; color:white">Spending Calculator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Survey</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Survey/Survey" style="font-size:smaller; color:white">Survey</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Why Quit</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/Benefit/BenefitsOfQuitting" style="font-size:smaller; color:white">Benefits of Quitting</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">Quitting Plan</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/QuitPlan/QuitPlan" style="font-size:smaller; color:white">Quitting Plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <br><br>
+                        <h5 class="text-uppercase">QUITTING SUPPORT</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="~/QuittingSupport/NicotineReplacements" style="font-size:smaller; color:white">Nicotine Replacements</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/Medications" style="font-size:smaller; color:white">Medications</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/SupportFromProfessionals" style="font-size:smaller; color:white">Professional Support</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/OtherOptions" style="font-size:smaller; color:white">Other Options</a>
+                            </li>
+                            <li>
+                                <a href="~/QuittingSupport/QuittingSupportOptions" style="font-size:smaller; color:white">Smoking Interventions</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
 
                 </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-4">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">FINANCE</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Calculator/Calculator" style="font-size:smaller; color:white">Spending Calculator</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Survey</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Survey/Survey" style="font-size:smaller; color:white">Survey</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Why Quit</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/Benefit/BenefitsOfQuitting" style="font-size:smaller; color:white">Benefits of Quitting</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">Quitting Plan</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/QuitPlan/QuitPlan" style="font-size:smaller; color:white">Quitting Plan</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <br><br>
-                    <h5 class="text-uppercase">QUITTING SUPPORT</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="~/QuittingSupport/NicotineReplacements" style="font-size:smaller; color:white">Nicotine Replacements</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/Medications" style="font-size:smaller; color:white">Medications</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/SupportFromProfessionals" style="font-size:smaller; color:white">Professional Support</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/OtherOptions" style="font-size:smaller; color:white">Other Options</a>
-                        </li>
-                        <li>
-                            <a href="~/QuittingSupport/QuittingSupportOptions" style="font-size:smaller; color:white">Smoking Interventions</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
+                <!-- Grid row -->
 
             </div>
-            <!-- Grid row -->
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-4">
+                <p style="font-size:10px">© 2019 Copyright:<a style=" color:white "> www.quitpathway.com</a></p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="~/vendor/jquery/jquery.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
-        </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-4">
-            © 2019 Copyright:
-            <a style=" color:white "> www.quitpathway.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="~/vendor/jquery/jquery.js"></script>
-    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="~/js/clean-blog.js"></script>
-
+        <!-- Custom scripts for this template -->
+        <script src="~/js/clean-blog.js"></script>
+    </div>
 </body>
 
 </html>
