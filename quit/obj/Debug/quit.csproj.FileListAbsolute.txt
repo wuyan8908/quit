@@ -591,7 +591,6 @@ D:\study\5120\it3_4\quit\quit\bin\roslyn\vbc.rsp
 D:\study\5120\it3_4\quit\quit\bin\roslyn\VBCSCompiler.exe
 D:\study\5120\it3_4\quit\quit\bin\roslyn\VBCSCompiler.exe.config
 D:\study\5120\it3_4\quit\quit\obj\Debug\quit.csprojAssemblyReference.cache
-D:\study\5120\it3_4\quit\quit\obj\Debug\quit.csproj.CoreCompileInputs.cache
 D:\study\5120\it3_4\quit\quit\obj\Debug\quit.csproj.CopyComplete
 D:\study\5120\it3_4\quit\quit\obj\Debug\quit.dll
 D:\study\5120\it3_4\quit\quit\obj\Debug\quit.pdb

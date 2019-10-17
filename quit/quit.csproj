@@ -331,6 +331,7 @@
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <None Include="Properties\PublishProfiles\quitpathway - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\quitpathway3 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Calculator.js" />
     <Content Include="Scripts\Calculator\button.min.js" />

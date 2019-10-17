@@ -508,11 +508,12 @@ footer .copyright {
 
     .buttonCa:hover span {
         padding-right: 25px;
+        color: white;
     }
 
     .buttonCa:active {
         background-color: #4184c6;
-    
+    color:white;
         transform: translateY(4px);
     }
 
